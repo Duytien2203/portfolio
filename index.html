@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Duy Tiến | Data-Driven Marketer (Product • Performance • Market Research)</title>
+  <meta name="description" content="Portfolio của Nguyễn Duy Tiến - Data-Driven Marketer kết hợp tư duy chiến lược Product/Performance và khoa học dữ liệu định lượng. 2 mùa Giải thưởng NCKH Euréka, Giải Bộ KH&CN 2025, Diễn giả IEEE & ITU Singapore.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/avatar.jpg" type="image/jpeg">
+
+  <!-- Google Fonts: Be Vietnam Pro (Gold standard for Vietnamese typography) + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS & Lucide Icons (Self-contained local assets) -->
+  <script src="assets/tailwind-cdn.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+            sans: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            midnight: {
+              950: '#070a12',
+              900: '#0b101c',
+              850: '#101726',
+              800: '#151e32',
+              700: '#1d283f',
+              600: '#334155',
+            },
+            emerald: {
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+            }
+          },
+          boxShadow: {
+            card: '0 10px 30px -10px rgba(0, 0, 0, 0.6)',
+            elevated: '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="assets/lucide.min.js"></script>
+
+  <style>
+    /* Clean, quiet, polished typography & organic rhythm */
+    html {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #070a12;
+      color: #f1f5f9;
+      font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.18;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      line-height: 1.25;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      font-size: clamp(1.15rem, 2vw, 1.5rem);
+      line-height: 1.35;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.015em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      text-wrap: balance;
+    }
+
+    p {
+      text-wrap: pretty;
+      color: #cbd5e1;
+    }
+
+    /* Soft organic glass surface with subtle ambient depth & satin bevel */
+    .glass-panel {
+      background: linear-gradient(145deg, rgba(16, 24, 40, 0.72) 0%, rgba(11, 16, 28, 0.82) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+    .glass-panel-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, box-shadow, border-color;
+    }
+    .glass-panel-hover:hover {
+      border-color: rgba(52, 211, 153, 0.32);
+      background: linear-gradient(145deg, rgba(20, 30, 52, 0.85) 0%, rgba(13, 20, 35, 0.92) 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    /* Soft pill buttons & interactive elements */
+    .soft-pill {
+      border-radius: 9999px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .soft-btn {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .soft-btn:hover {
+      transform: translateY(-1.5px);
+    }
+    .soft-btn:active {
+      transform: translateY(0);
+    }
+
+    /* Custom Scrollbar - sleek, soft */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070a12;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+
+<body class="bg-midnight-900 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Clean Deep Canvas Background -->
+  <div class="fixed inset-0 -z-10 bg-midnight-950 pointer-events-none"></div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-slate-900/95 border border-emerald-500/50 text-white px-5 py-3 rounded-xl shadow-2xl backdrop-blur-md">
+    <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+    <span id="toast-text" class="text-sm font-medium">Đã sao chép!</span>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-midnight-900/80 backdrop-blur-xl transition-all duration-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 p-[1px] shadow-glow">
+          <div class="w-full h-full bg-midnight-900 rounded-[11px] flex items-center justify-center font-heading font-bold text-sm text-emerald-400 group-hover:bg-transparent group-hover:text-white transition-all">
+            DT
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-bold text-base tracking-tight leading-none text-white">Duy Tiến</span>
+          <span class="text-[11px] font-medium text-emerald-400/90 tracking-wide uppercase">Data-Driven Marketer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <div class="hidden md:flex items-center gap-1 bg-midnight-800/80 p-1.5 rounded-full border border-white/5 text-sm">
+        <a href="#about" class="px-4 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Về tôi</a>
+        <a href="#impact" class="px-4 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Thành tựu</a>
+        <a href="#projects" class="px-4 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Chiến dịch & Dự án</a>
+        <a href="#awards" class="px-4 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">NCKH & Hội thảo</a>
+        <a href="#experience" class="px-4 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Kinh nghiệm</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-500 text-midnight-900 hover:bg-emerald-400 shadow-glow transition-all">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          <span>Liên hệ ngay</span>
+        </a>
+        <a href="assets/cv/CV_Nguyen_Duy_Tien_Market_Research_Latest.pdf" download class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium border border-white/10 hover:border-emerald-500/50 hover:bg-white/5 text-slate-200 transition-all">
+          <i data-lucide="download" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>Tải CV Mới Nhất</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <!-- Ambient Soft Glow Orbs -->
+    <div class="pointer-events-none absolute -top-24 left-1/4 w-96 h-96 bg-emerald-500/[0.08] rounded-full blur-[120px] -z-10"></div>
+    <div class="pointer-events-none absolute top-1/3 -right-20 w-96 h-96 bg-cyan-500/[0.08] rounded-full blur-[140px] -z-10"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <!-- Availability Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full w-fit bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Sẵn sàng cho cơ hội mới (Product Marketing • Performance • Market Research)</span>
+          </div>
+
+          <!-- Main Heading -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-white leading-[1.15]">
+              Nguyễn Duy Tiến
+            </h1>
+            <p class="text-xl sm:text-2xl font-heading font-semibold text-emerald-400">
+              Data-Driven Marketer
+            </p>
+            <p class="text-sm text-slate-300 font-medium tracking-wide">
+              Product Marketing • Performance Marketing • Market Research
+            </p>
+          </div>
+
+          <!-- Description Hook -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+            Tôi là một <strong class="text-white font-medium">“người chơi hệ logic”</strong>, say mê những con số và dữ liệu. Lợi thế của tôi là sự kết hợp nhuần nhuyễn giữa <strong class="text-white font-medium">tư duy Marketing chiến lược (Product & Performance Growth)</strong> với <strong class="text-white font-medium">nền tảng phân tích định lượng (Machine Learning, SPSS, Python)</strong>. Nổi bật với khả năng đào sâu nghiên cứu thị trường, bóc tách insight dữ liệu và xây dựng kế hoạch chiến lược bài bản, khả thi từ đề án phân tích thực tế. 2 mùa Giải thưởng NCKH Euréka & Báo cáo viên quốc tế tại Singapore & IEEE.
+          </p>
+
+          <!-- Key Highlights Pills -->
+          <div class="flex flex-wrap gap-2.5 pt-1 text-xs">
+            <a href="https://ung-dung-da-nckh.streamlit.app" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-midnight-800 border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 hover:text-white flex items-center gap-2 transition-all group" title="Trải nghiệm Nền tảng phân tích NCKH StaNDTistics do Tiến phát triển">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span class="font-semibold">Web App StaNDTistics NCKH</span>
+              <i data-lucide="external-link" class="w-3 h-3 text-emerald-400 opacity-70 group-hover:opacity-100"></i>
+            </a>
+            <a href="https://doi.org/10.1109/ICLIE61478.2024.11015395" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-midnight-800 border border-slate-700/80 hover:border-emerald-500/40 text-slate-200 hover:text-white flex items-center gap-1.5 transition-all group" title="Xem bài báo IEEE Xplore: DOI 10.1109/ICLIE61478.2024.11015395">
+              <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>01 Bài Báo IEEE (Scopus)</span>
+              <i data-lucide="external-link" class="w-3 h-3 text-slate-400 opacity-60 group-hover:opacity-100"></i>
+            </a>
+            <span class="px-3 py-1.5 rounded-lg bg-midnight-800 border border-slate-700/80 text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>2 Mùa Giải Euréka (2024 & 2025)</span>
+            </span>
+            <span class="px-3 py-1.5 rounded-lg bg-midnight-800 border border-slate-700/80 text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>Giải Xuất Sắc Bộ KH&CN 2025</span>
+            </span>
+            <span class="px-3 py-1.5 rounded-lg bg-midnight-800 border border-slate-700/80 text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="globe" class="w-3.5 h-3.5 text-sky-400"></i>
+              <span>Diễn giả ITU Singapore 2026</span>
+            </span>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-3">
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-midnight-900 font-heading font-bold text-sm shadow-glow hover:opacity-95 transition-all flex items-center gap-2">
+              <span>Xem Trình Chiếu Slide Đề Án</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="assets/cv/CV_Nguyen_Duy_Tien_Market_Research_Latest.pdf" download class="px-5 py-3 rounded-xl glass-panel text-slate-200 text-sm font-medium hover:border-emerald-500/50 hover:text-white transition-all flex items-center gap-2">
+              <i data-lucide="download" class="w-4 h-4 text-emerald-400"></i>
+              <span>Tải CV Bản Mới Nhất</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nguyen-duy-tien" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl glass-panel text-slate-300 hover:text-white hover:border-cyan-500/50 transition-all" title="LinkedIn Profile">
+              <i data-lucide="linkedin" class="w-4 h-4 text-cyan-400"></i>
+            </a>
+            <button onclick="copyToClipboard('tien23247@gmail.com', 'Đã chép Email: tien23247@gmail.com')" class="p-3 rounded-xl glass-panel text-slate-300 hover:text-white hover:border-emerald-500/50 transition-all" title="Sao chép Email">
+              <i data-lucide="copy" class="w-4 h-4 text-emerald-400"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Avatar & Interactive Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm sm:max-w-md">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-midnight-950 shadow-elevated border border-slate-800 group">
+              <!-- Portrait Image -->
+              <img src="assets/images/avatar_hero.jpg" alt="Nguyễn Duy Tiến - Data-Driven Marketer" class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/90 via-midnight-950/20 to-transparent"></div>
+              
+              <!-- Bottom Float Info inside picture -->
+              <div class="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-midnight-900/90 backdrop-blur-md border border-white/10 shadow-lg">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="flex items-center gap-1.5">
+                      <span class="font-heading font-bold text-white text-sm">Nguyễn Duy Tiến</span>
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    </div>
+                    <p class="text-emerald-400 text-xs font-medium">Data-Driven Marketer</p>
+                  </div>
+                  <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[11px] font-semibold tracking-wide">GROWTH & RESEARCH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT NUMBERS / DATA TICKER -->
+  <section id="impact" class="border-y border-slate-800 bg-midnight-900/60 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-6 sm:p-7 rounded-2xl glass-panel glass-panel-hover flex flex-col justify-center items-center text-center shadow-lg">
+          <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white">VINAMR</p>
+          <p class="text-xs uppercase tracking-wider text-emerald-400 mt-1 font-semibold">Field Operator & QC</p>
+          <p class="text-xs text-slate-300 mt-1">Marketing Research & Consultants</p>
+        </div>
+
+        <div class="p-6 sm:p-7 rounded-2xl glass-panel glass-panel-hover flex flex-col justify-center items-center text-center shadow-lg">
+          <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white">2 Mùa</p>
+          <p class="text-xs uppercase tracking-wider text-emerald-400 mt-1 font-semibold">Giải Euréka Toàn Quốc</p>
+          <p class="text-xs text-slate-300 mt-1">2024 & 2025 (Liên Tiếp)</p>
+        </div>
+
+        <div class="p-6 sm:p-7 rounded-2xl glass-panel glass-panel-hover flex flex-col justify-center items-center text-center shadow-lg">
+          <p class="text-3xl sm:text-4xl font-heading font-extrabold text-white">01 Paper</p>
+          <p class="text-xs uppercase tracking-wider text-emerald-400 mt-1 font-semibold">Công Bố IEEE Xplore</p>
+          <p class="text-xs text-slate-300 mt-1">Peer-Reviewed Scientific DOI</p>
+        </div>
+
+        <a href="#projects" class="p-6 sm:p-7 rounded-2xl glass-panel glass-panel-hover hover:border-emerald-500/40 transition-all duration-300 block group flex flex-col justify-center items-center text-center shadow-lg">
+          <p class="text-3xl sm:text-4xl font-heading font-extrabold text-emerald-400 group-hover:scale-105 transition-transform">Web App</p>
+          <p class="text-xs uppercase tracking-wider text-white mt-1 font-semibold flex items-center justify-center gap-1">
+            <span>StaNDTistics v2.5</span>
+            <i data-lucide="arrow-down-right" class="w-3.5 h-3.5 text-emerald-400"></i>
+          </p>
+          <p class="text-xs text-slate-300 mt-1">Streamlit & Python cho NCKH</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & PHILOSOPHY -->
+  <section id="about" class="py-20 border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Triết lý làm việc</span>
+          <h2 class="text-3xl font-heading font-bold text-white">
+            Khi Tư Duy Khoa Học Gặp Gỡ Tiếp Thị Sáng Tạo
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Nhiều chiến dịch Marketing thất bại vì chỉ dựa trên trực giác mơ hồ. Ngược lại, nhiều báo cáo dữ liệu thất bại vì chỉ toàn con số khô khan mà không chuyển hóa thành hành động.
+          </p>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Tôi định vị mình ở giao điểm vàng: <strong class="text-white">Lấy dữ liệu làm kim chỉ nam, lấy sáng tạo làm đòn bẩy bứt phá</strong>.
+          </p>
+
+          <div class="pt-2 flex flex-col gap-3">
+            <div class="flex items-start gap-3 py-1.5">
+              <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 shrink-0">
+                <i data-lucide="database" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-white">Nghiên cứu thị trường có phương pháp</h3>
+                <p class="text-xs text-slate-300">Khảo sát mẫu, audit đối thủ, phân tích dữ liệu thứ cấp và mô hình hóa hành vi khách hàng.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 py-1.5">
+              <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 shrink-0">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-white">Ý tưởng sáng tạo sắc bén</h3>
+                <p class="text-xs text-slate-300">Chuyển hóa insight người tiêu dùng thành Big Idea, Key Hook và kế hoạch hành động chiến lược bài bản.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 py-1.5">
+              <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400 shrink-0">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-white">Quản trị rủi ro & Đo lường KPI</h3>
+                <p class="text-xs text-slate-300">Ma trận rủi ro 5x5, kịch bản dự phòng khủng hoảng và đo lường ROI trên từng đồng ngân sách.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl glass-panel p-6 sm:p-8 space-y-6">
+            <h3 class="font-heading font-bold text-xl text-white flex items-center gap-2">
+              <i data-lucide="terminal" class="w-5 h-5 text-emerald-400"></i>
+              <span>Data & MarTech Arsenal</span>
+            </h3>
+
+            <!-- Capability Pillars (Typographic, unnested layout) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
+              <div class="pl-3.5 border-l-2 border-emerald-500/50 space-y-1">
+                <div class="flex items-center gap-2 text-emerald-400 font-semibold text-sm">
+                  <i data-lucide="bar-chart-2" class="w-4 h-4"></i>
+                  <span>Nghiên Cứu & Thống Kê</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">SPSS, SmartPLS, Cronbach's Alpha, EFA, CB-SEM qua Semopy, Quota Control & Survey Design.</p>
+              </div>
+
+              <div class="pl-3.5 border-l-2 border-cyan-500/50 space-y-1">
+                <div class="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+                  <i data-lucide="terminal" class="w-4 h-4"></i>
+                  <span>Data Science & Python</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">Python, Streamlit, Scikit-learn, phân khúc khách hàng RFM, K-Means, Regularized Regression.</p>
+              </div>
+
+              <div class="pl-3.5 border-l-2 border-amber-500/50 space-y-1">
+                <div class="flex items-center gap-2 text-amber-400 font-semibold text-sm">
+                  <i data-lucide="compass" class="w-4 h-4"></i>
+                  <span>Hoạch Định Chiến Lược</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">Macro & Competitor Audit, chân dung khách hàng B-A2, kế hoạch hành động 3 Phase, Ma trận rủi ro 5x5.</p>
+              </div>
+
+              <div class="pl-3.5 border-l-2 border-emerald-500/50 space-y-1">
+                <div class="flex items-center gap-2 text-emerald-400 font-semibold text-sm">
+                  <i data-lucide="trending-up" class="w-4 h-4"></i>
+                  <span>Performance & Growth</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">Meta & TikTok Ads, SEO Audit, đo lường ROI chuyển đổi và tối ưu hành trình trải nghiệm người dùng.</p>
+              </div>
+            </div>
+
+            <!-- Quote badge -->
+            <div class="pt-4 border-t border-white/10 text-xs text-slate-300 italic leading-relaxed">
+              “Cần một nhân sự tư duy phân tích tốt, thuyết trình tự tin và làm việc dựa trên dữ liệu thật? Hy vọng anh/chị có thể dừng tìm kiếm vì đó chính là em.”
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS & CASE STUDIES (SLIDE SHOWCASE) -->
+  <section id="projects" class="py-20 bg-midnight-900 relative overflow-hidden">
+    <!-- Ambient Soft Glow Orbs -->
+    <div class="pointer-events-none absolute top-1/4 -left-28 w-[32rem] h-[32rem] bg-emerald-500/[0.05] rounded-full blur-[140px] -z-10"></div>
+    <div class="pointer-events-none absolute bottom-12 -right-28 w-[32rem] h-[32rem] bg-cyan-500/[0.05] rounded-full blur-[140px] -z-10"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header & Filter Tabs -->
+      <div class="mb-10 space-y-5">
+        <div>
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Proof of Work • Slide Showcase</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mt-1">Dự Án & Chiến Dịch Tiêu Biểu</h2>
+          <p class="text-slate-400 text-sm mt-1">Bộ slide thuyết trình chiến lược thực tế được trích xuất trực tiếp từ hồ sơ năng lực</p>
+        </div>
+
+        <!-- Filter Tabs Bar (Spacious soft pill row on desktop, swipeable on mobile) -->
+        <div class="flex items-center gap-2.5 sm:gap-3 overflow-x-auto pb-2 pt-1 scrollbar-none sm:flex-wrap">
+          <button onclick="filterProjects('all', this)" data-category="all" class="project-tab-btn active px-5 py-2.5 sm:px-6 sm:py-3 rounded-full bg-emerald-500 text-midnight-950 font-bold text-xs sm:text-sm whitespace-nowrap transition-all duration-300 shadow-sm">
+            Tất cả dự án
+          </button>
+          <button onclick="filterProjects('webapp', this)" data-category="webapp" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
+            Web App NCKH
+          </button>
+          <button onclick="filterProjects('marketing', this)" data-category="marketing" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
+            Đề Án Chiến Lược
+          </button>
+          <button onclick="filterProjects('research', this)" data-category="research" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
+            Nghiên Cứu Thị Trường
+          </button>
+          <button onclick="filterProjects('data', this)" data-category="data" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
+            Data Science & ML
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- FLAGSHIP PROJECT 1: STANDTISTICS - SMARTRESEARCH STUDIO WEB APPLICATION (SPOTLIGHT) -->
+        <div class="project-card webapp md:col-span-2 rounded-3xl glass-panel glass-panel-hover p-6 sm:p-8 transition-all duration-300 overflow-hidden border border-emerald-500/25 relative">
+
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info -->
+            <div class="lg:col-span-6 space-y-4">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wide border border-emerald-500/40">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  Flagship Web Application
+                </span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-cyan-300 text-xs font-mono border border-cyan-500/30">v2.5 Academic Edition</span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-slate-300 text-xs border border-white/10">12 Slide Demo & Trực Quan</span>
+              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white leading-tight">
+                StaNDTistics • SmartResearch Studio: Nền Tảng Phân Tích Thống Kê & SEM Toàn Diện Cho NCKH
+              </h3>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Ứng dụng web chuyên sâu được Nguyễn Duy Tiến tự tay lập trình và triển khai thực tế nhằm giải quyết rào cản chi phí bản quyền đắt đỏ và tính phân mảnh khi làm nghiên cứu khoa học xã hội. Nền tảng thay thế trọn bộ ba phần mềm thương mại <strong class="text-white font-medium">SPSS, AMOS và SmartPLS</strong> trong một giao diện duy nhất: từ tiếp nhận dữ liệu SPSS <code class="text-emerald-300 bg-midnight-950 px-1 py-0.5 rounded text-xs">.sav</code> nguyên bản, kiểm định Cronbach's Alpha, EFA, CFA/CB-SEM, PLS-SEM cho đến Machine Learning và tự động xuất báo cáo luận văn chuẩn APA-7.
+              </p>
+
+              <!-- 4 Feature Highlights Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-1">
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="database" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>SPSS & Thống Kê Chuẩn Mực</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Đọc nhãn biến & giá trị từ file <code class="text-emerald-300 bg-midnight-950 px-1 py-0.5 rounded text-[11px]">.sav</code>, kiểm định phân phối chuẩn Kline (2015), Alpha-if-deleted, Independent T-Test & One-Way ANOVA.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="git-fork" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>CB-SEM & PLS-SEM Toàn Diện</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">CB-SEM qua Semopy (CMIN/df, CFI, TLI, RMSEA, CR, AVE, HTMT); PLS-SEM với thuật toán lặp Wold, Bootstrapping 2000 & phân tích trung gian VAF.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="brain-circuit" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Học Máy & Phân Tích Cảm Xúc</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">AI Advisor cố vấn phương pháp, RFM Segmentation, K-Means Clustering, Regularized Regression, Sentiment & LDA Topic Modeling.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Xuất Báo Cáo Chuẩn APA 7th</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Xuất trực tiếp tệp Microsoft Word (<code class="text-emerald-300 bg-midnight-950 px-1 py-0.5 rounded text-[11px]">.docx</code> 3 đường kẻ chuẩn tạp chí ISI/Scopus) và Excel kèm thuyết minh học thuật.</p>
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-2 text-[11px] pt-1">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-emerald-300 font-mono">Python 3.12</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-cyan-300 font-mono">Streamlit Cloud</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Semopy (CB-SEM)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Factor Analyzer (EFA/CFA)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Scikit-learn (ML)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Pyreadstat (SPSS)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Python-docx (APA-7)</span>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <a href="https://ung-dung-da-nckh.streamlit.app" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-midnight-900 font-heading font-bold text-xs hover:opacity-95 shadow-glow transition-all flex items-center gap-2 group">
+                  <i data-lucide="external-link" class="w-4 h-4 text-midnight-900 group-hover:scale-110 transition-transform"></i>
+                  <span>Trải Nghiệm Web App (Live Demo)</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-midnight-900"></span>
+                </a>
+
+                <button onclick="openSlideDeck('standtistics', 2)" class="px-4 py-2.5 rounded-xl glass-panel text-slate-200 text-xs font-medium hover:border-emerald-500/50 hover:text-white transition-all flex items-center gap-1.5">
+                  <i data-lucide="presentation" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Xem 12 Slide Kiến Trúc (Slide Deck)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Slide Deck Preview -->
+            <div class="lg:col-span-6 space-y-3">
+              <!-- Main Feature Slide Frame -->
+              <div id="standtistics-main-frame" class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer" onclick="openSlideDeck('standtistics', 2)">
+                <img id="standtistics-main-slide-img" src="assets/images/standtistics/scene_02.png" alt="StaNDTistics SmartResearch Studio" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+                
+                <!-- Live Cloud Ribbon Badge -->
+                <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-emerald-500/90 backdrop-blur-md text-[10px] font-bold text-midnight-900 flex items-center gap-1.5 shadow-lg">
+                  <span class="w-1.5 h-1.5 rounded-full bg-midnight-900"></span>
+                  <span>ONLINE STREAMLIT CLOUD</span>
+                </div>
+
+                <!-- Slide badge label -->
+                <div class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-lg bg-midnight-900/90 backdrop-blur-md border border-white/10 text-xs font-mono text-emerald-400 flex items-center justify-between">
+                  <div class="flex items-center gap-2 truncate">
+                    <i data-lucide="presentation" class="w-3.5 h-3.5 flex-none"></i>
+                    <span id="standtistics-main-slide-title" class="truncate">Slide 02: Giới thiệu StaNDTistics • SmartResearch Studio 2.5</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 font-sans flex-none ml-2">Phóng to</span>
+                </div>
+
+                <div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md border border-white/10 text-[10px] text-slate-300 flex items-center gap-1 group-hover:bg-emerald-500 group-hover:text-midnight-900 transition-colors">
+                  <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                  <span>Phóng to slide</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Strip -->
+              <div>
+                <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2 flex items-center justify-between">
+                  <span>Trực quan 12 màn hình tính năng nền tảng:</span>
+                  <span class="text-emerald-400 text-xs text-slate-400 font-medium">Click để đổi slide</span>
+                </p>
+                <div class="grid grid-cols-6 gap-2">
+                  <div onclick="previewDeckSlide('standtistics', 1, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 01: Bối cảnh NCKH">
+                    <img src="assets/images/standtistics/scene_01.png" alt="Slide 01" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('standtistics', 2, this)" class="deck-thumb active cursor-pointer rounded-lg overflow-hidden border-2 border-emerald-500 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 02: Giới thiệu nền tảng">
+                    <img src="assets/images/standtistics/scene_02.png" alt="Slide 02" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('standtistics', 6, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 06: Cronbach's Alpha">
+                    <img src="assets/images/standtistics/scene_06.png" alt="Slide 06" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('standtistics', 8, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 08: EFA Factor Analysis">
+                    <img src="assets/images/standtistics/scene_08.png" alt="Slide 08" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('standtistics', 10, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 10: PLS-SEM & Mediation">
+                    <img src="assets/images/standtistics/scene_10.png" alt="Slide 10" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('standtistics', 12, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 12: Xuất Báo Cáo APA-7">
+                    <img src="assets/images/standtistics/scene_12.png" alt="Slide 12" class="w-full h-full object-cover">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CASE STUDY 1: ARROW STRATEGIC MARKETING PROJECT (SPOTLIGHT - SPAN 2 COLS) -->
+        <div class="project-card marketing md:col-span-2 rounded-3xl glass-panel glass-panel-hover p-6 sm:p-8 transition-all duration-300 overflow-hidden border border-emerald-500/20">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info -->
+            <div class="lg:col-span-6 space-y-4">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-3 py-1 rounded-md bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wide">Đề Án Môn Học (Academic Project)</span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-slate-300 text-xs border border-white/10">Phân Tích Nghiên Cứu & Chiến Lược</span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-slate-300 text-xs border border-white/10">14 Slide Phân Tích & Kế Hoạch</span>
+              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white">
+                Đề Án Nghiên Cứu Thị Trường & Kế Hoạch Chiến Lược: Arrow Sanitary Ware
+              </h3>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Đề án học thuật mô phỏng bài toán thương hiệu thiết bị vệ sinh cao cấp Arrow tiếp cận thị trường Việt Nam. Trọng tâm của đề án là <strong class="text-white font-medium">năng lực phân tích và hoạch định toàn diện</strong>: từ bối cảnh kinh tế vĩ mô & tăng trưởng ngành, audit 4 đối thủ lớn (Toto, Inax, Viglacera, Ceacer), audit kênh số (Web, Mobile, App), cho đến mô hình hóa chân dung khách hàng B-A2 và xây dựng lộ trình thực thi 3 giai đoạn kèm ma trận quản trị rủi ro chặt chẽ.
+              </p>
+
+              <!-- Strategy Highlights -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs pt-1">
+                <div class="space-y-1">
+                  <p class="text-emerald-400 font-semibold text-xs flex items-center gap-1.5">
+                    <i data-lucide="search" class="w-3.5 h-3.5"></i>
+                    <span>Nghiên Cứu & Đối Thủ</span>
+                  </p>
+                  <p class="text-slate-300 text-xs leading-relaxed">Audit 4 đối thủ (Toto, Inax, Viglacera, Ceacer) & phân tích vĩ mô 31% CAGR.</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-emerald-400 font-semibold text-xs flex items-center gap-1.5">
+                    <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+                    <span>Insight & Chân Dung</span>
+                  </p>
+                  <p class="text-slate-300 text-xs leading-relaxed">Phân khúc khách hàng B-A2, Customer Journey Map & điểm chạm số.</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-emerald-400 font-semibold text-xs flex items-center gap-1.5">
+                    <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i>
+                    <span>Kế Hoạch & Quản Trị</span>
+                  </p>
+                  <p class="text-slate-300 text-xs leading-relaxed">Lộ trình thực thi 3 giai đoạn & Ma trận quản trị rủi ro 5x5.</p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-2 text-[11px] pt-1">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Nghiên cứu vĩ mô (31% CAGR)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Audit đối thủ: Toto, Inax, Viglacera</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Website & Mobile Audit</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Chân dung Demographics & Psychographics</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Hành trình khách hàng (Journey Map)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Ma trận rủi ro 5x5</span>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <button onclick="openSlideDeck('arrow', 13)" class="px-5 py-2.5 rounded-xl bg-emerald-500 text-midnight-900 font-heading font-bold text-xs hover:bg-emerald-400 shadow-glow transition-all flex items-center gap-2">
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Trình Chiếu Bộ Slide Phân Tích (14 Slide)</span>
+                </button>
+                <button onclick="openSlideDeck('arrow', 25)" class="px-4 py-2.5 rounded-xl glass-panel text-slate-200 text-xs font-medium hover:border-emerald-500/50 transition-all flex items-center gap-1.5">
+                  <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span>Xem Ma Trận Rủi Ro (Slide 25)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Slide Deck Preview -->
+            <div class="lg:col-span-6 space-y-3">
+              <!-- Main Feature Slide Frame -->
+              <div id="arrow-main-frame" class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer" onclick="openSlideDeck('arrow', 13)">
+                <img id="arrow-main-slide-img" src="assets/slides/slide_13.png" alt="Chiến lược IMC Arrow" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+                
+                <!-- Slide badge label -->
+                <div class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-midnight-900/90 backdrop-blur-md border border-white/10 text-xs font-mono text-emerald-400 flex items-center gap-2">
+                  <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+                  <span id="arrow-main-slide-title">Slide 13: To-Win Strategy & Khung Kế Hoạch Chiến Lược</span>
+                </div>
+
+                <div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md border border-white/10 text-[10px] text-slate-300 flex items-center gap-1 group-hover:bg-emerald-500 group-hover:text-midnight-900 transition-colors">
+                  <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                  <span>Phóng to slide</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Strip -->
+              <div>
+                <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2 flex items-center justify-between">
+                  <span>Các slide phân tích trọng tâm trong đề án:</span>
+                  <span class="text-emerald-400 text-xs text-slate-400 font-medium">Click để xem chi tiết</span>
+                </p>
+                <div class="grid grid-cols-6 gap-2">
+                  <div onclick="previewDeckSlide('arrow', 12, this)" class="deck-thumb active cursor-pointer rounded-lg overflow-hidden border-2 border-emerald-500 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 12: Đề bài & Kế hoạch">
+                    <img src="assets/slides/slide_12.png" alt="Slide 12" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('arrow', 13, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 13: Khung chiến lược">
+                    <img src="assets/slides/slide_13.png" alt="Slide 13" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('arrow', 14, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 14: Macro Market Research">
+                    <img src="assets/slides/slide_14.png" alt="Slide 14" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('arrow', 15, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 15: Ma trận đối thủ">
+                    <img src="assets/slides/slide_15.png" alt="Slide 15" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('arrow', 21, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 21: Lộ trình hành động 3 giai đoạn">
+                    <img src="assets/slides/slide_21.png" alt="Slide 21" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('arrow', 25, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-emerald-500/60 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 25: Ma trận rủi ro 5x5">
+                    <img src="assets/slides/slide_25.png" alt="Slide 25" class="w-full h-full object-cover">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CASE STUDY 3: FASTLANCE MARKET RESEARCH & GROWTH STRATEGY (SPOTLIGHT - SPAN 2 COLS) -->
+        <div class="project-card research md:col-span-2 rounded-3xl glass-panel glass-panel-hover p-6 sm:p-8 transition-all duration-300 overflow-hidden border border-amber-500/25 relative">
+
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info -->
+            <div class="lg:col-span-6 space-y-4">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-3 py-1 rounded-md bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wide border border-amber-500/40">Market Research & Strategy</span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-amber-300 text-xs font-mono border border-amber-500/30">Fastlance Co., Ltd. • 2025</span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-slate-300 text-xs border border-white/10">16 Slide Phân Tích & Nghiên Cứu</span>
+              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white leading-tight">
+                Nghiên Cứu Thị Trường Freelance & Chiến Lược Ra Mắt Nền Tảng Fastlance Việt Nam
+              </h3>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Đề án nghiên cứu và hoạch định chiến lược tiếp cận thị trường Việt Nam cho sàn giao dịch nhân tài tự do Fastlance (H2/2025). Tập trung bóc tách <strong class="text-white font-medium">thực trạng thị trường lao động Gig Economy</strong>, audit phản hồi người dùng thực tế từ đợt Soft Launch 2024, phân tích ma trận 4 đối thủ (Fiverr, Upwork, vLance, Vietgig) và đề xuất chiến lược giải quyết nút thắt hai đầu (Two-Sided Marketplace).
+              </p>
+
+              <!-- 4 Research Pillars Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-1">
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-amber-400 font-semibold text-xs">
+                    <i data-lucide="users" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Khảo Sát Kênh & Thói Quen</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">60% tìm qua Group Facebook tự phát, 45% qua người quen; chỉ 15% dùng app chuyên nghiệp do rủi ro scam, bùng tiền và rào cản tiếng Anh.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-amber-400 font-semibold text-xs">
+                    <i data-lucide="message-square-warning" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Audit Soft Launch 2024</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Bóc tách phản hồi thực tế: Freelancers phàn nàn thiếu job thực, duyệt lâu; xác định điểm nghẽn cốt lõi nằm ở nguồn cầu việc làm từ phía Buyer.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="target" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Chiến Lược Onboard Buyers</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Định vị SME & Startup là mắt xích quyết định; đánh trúng nhu cầu tối ưu chi phí vận hành (Operation Cost), chất lượng và tốc độ khớp lệnh 24h.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="swords" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Ma Trận Đối Thủ & Lợi Thế POD</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">So sánh 4 sàn (Fiverr, Upwork, vLance, Vietgig); Fastlance tạo khác biệt bằng bảo chứng thanh toán Escrow, hỗ trợ bản địa và 0% phí hoa hồng.</p>
+                </div>
+              </div>
+
+              <!-- Badges -->
+              <div class="flex flex-wrap gap-2 text-[11px] pt-1">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-amber-300 font-mono">Market Research</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Competitor Matrix (4 sàn)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Audience Persona</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Social Listening Audit</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Two-Sided Marketplace Strategy</span>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <button onclick="openSlideDeck('fastlance', 1)" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-midnight-900 font-heading font-bold text-xs hover:opacity-95 shadow-glow transition-all flex items-center gap-2">
+                  <i data-lucide="presentation" class="w-4 h-4 text-midnight-900"></i>
+                  <span>Trình Chiếu Bộ Slide Nghiên Cứu Fastlance (16 Slide)</span>
+                </button>
+                <button onclick="openSlideDeck('fastlance', 15)" class="px-4 py-2.5 rounded-xl bg-midnight-800 hover:bg-midnight-700 border border-white/10 text-slate-200 text-xs font-medium hover:border-amber-500/50 hover:text-white transition-all flex items-center gap-1.5">
+                  <i data-lucide="swords" class="w-4 h-4 text-amber-400"></i>
+                  <span>Xem Ma Trận Đối Thủ (Slide 15)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Slide Deck Preview -->
+            <div class="lg:col-span-6 space-y-3">
+              <!-- Main Feature Slide Frame -->
+              <div id="fastlance-main-frame" class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer" onclick="openSlideDeck('fastlance', 1)">
+                <img id="fastlance-main-slide-img" src="assets/images/fastlance/slide_fastlance_01.png" alt="Fastlance Market Research Proposal" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+                
+                <!-- Slide badge label -->
+                <div class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-lg bg-midnight-900/90 backdrop-blur-md border border-white/10 text-xs font-mono text-amber-400 flex items-center justify-between">
+                  <div class="flex items-center gap-2 truncate">
+                    <i data-lucide="presentation" class="w-3.5 h-3.5 flex-none"></i>
+                    <span id="fastlance-main-slide-title" class="truncate">Slide 01: Brief Recap & Phân Tích Thách Thức Thị Trường Fastlance</span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 font-sans flex-none ml-2">Phóng to</span>
+                </div>
+
+                <div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md border border-white/10 text-[10px] text-slate-300 flex items-center gap-1 group-hover:bg-amber-500 group-hover:text-midnight-900 transition-colors">
+                  <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                  <span>Phóng to slide</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Strip (16 Rich Analysis Slides) -->
+              <div>
+                <p class="text-[11px] font-semibold text-slate-300 uppercase tracking-wider mb-2 flex items-center justify-between">
+                  <span>16 Slide nghiên cứu & phân tích thị trường chuyên sâu:</span>
+                  <span class="text-amber-400 text-xs font-medium">Click để chuyển slide</span>
+                </p>
+                <div class="grid grid-cols-4 sm:grid-cols-8 gap-1.5">
+                  <div onclick="previewDeckSlide('fastlance', 1, this)" class="deck-thumb active cursor-pointer rounded-md overflow-hidden border-2 border-amber-400 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 01: Brief Recap & Mục Tiêu">
+                    <img src="assets/images/fastlance/slide_fastlance_01.png" alt="Slide 01" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 2, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 02: Bối Cảnh Vĩ Mô Freelance">
+                    <img src="assets/images/fastlance/slide_fastlance_02.png" alt="Slide 02" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 3, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 03: Cơ Cấu Tuyển Dụng">
+                    <img src="assets/images/fastlance/slide_fastlance_03.png" alt="Slide 03" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 4, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 04: Khảo Sát Kênh: 60% FB Group">
+                    <img src="assets/images/fastlance/slide_fastlance_04.png" alt="Slide 04" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 5, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 05: User Audit Soft Launch 2024">
+                    <img src="assets/images/fastlance/slide_fastlance_05.png" alt="Slide 05" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 6, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 06: Chiến Lược Hai Đầu (Two-Sided)">
+                    <img src="assets/images/fastlance/slide_fastlance_06.png" alt="Slide 06" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 7, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 07: 4 Câu Hỏi Trọng Tâm Buyers">
+                    <img src="assets/images/fastlance/slide_fastlance_07.png" alt="Slide 07" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 8, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 08: Chân Dung Khách Hàng Mục Tiêu">
+                    <img src="assets/images/fastlance/slide_fastlance_08.png" alt="Slide 08" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 9, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 09: Khó Khăn Vận Hành SMEs">
+                    <img src="assets/images/fastlance/slide_fastlance_09.png" alt="Slide 09" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 10, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 10: Ma Trận Tối Ưu Hóa Giá Trị">
+                    <img src="assets/images/fastlance/slide_fastlance_10.png" alt="Slide 10" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 11, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 11: Đối Thủ Toàn Cầu: Fiverr">
+                    <img src="assets/images/fastlance/slide_fastlance_11.png" alt="Slide 11" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 12, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 12: Đối Thủ Toàn Cầu: Upwork">
+                    <img src="assets/images/fastlance/slide_fastlance_12.png" alt="Slide 12" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 13, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 13: Đối Thủ Nội Địa: vLance">
+                    <img src="assets/images/fastlance/slide_fastlance_13.png" alt="Slide 13" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 14, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 14: Thực Trạng Cộng Đồng & Rủi Ro">
+                    <img src="assets/images/fastlance/slide_fastlance_14.png" alt="Slide 14" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 15, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 15: Ma Trận Tổng Hợp Đối Thủ">
+                    <img src="assets/images/fastlance/slide_fastlance_15.png" alt="Slide 15" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('fastlance', 16, this)" class="deck-thumb cursor-pointer rounded-md overflow-hidden border border-white/10 hover:border-amber-400 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Slide 16: Tổng Hợp Nhu Cầu & Giải Pháp">
+                    <img src="assets/images/fastlance/slide_fastlance_16.png" alt="Slide 16" class="w-full h-full object-cover">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CASE STUDY 4: COOLMATE MARKET RESEARCH & STRATEGIC PROPOSAL -->
+        <div class="project-card research rounded-3xl glass-panel glass-panel-hover p-6 sm:p-8 space-y-4 transition-all duration-300 border border-cyan-500/20 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wide">Market Research & Strategy • Coolmate</span>
+              <span class="text-xs text-slate-300 font-medium">11 Slide Dự Án</span>
+            </div>
+
+            <h3 class="text-xl font-heading font-bold text-white">
+              Nghiên Cứu Thị Trường & Kế Hoạch Marketing Chiến Lược: Coolmate
+            </h3>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Quy trình nghiên cứu thị trường chuẩn mực cho thương hiệu thời trang Coolmate: Khảo sát vĩ mô, xây dựng chân dung khách hàng mục tiêu (Audience Persona), xác định Pain Points, mô hình nghiên cứu (Model Research), Customer Journey Map và đề xuất hành động.
+            </p>
+
+            <!-- Main Slide Preview -->
+            <div id="proj2-main-frame" class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer" onclick="openSlideDeck('project2', 27)">
+              <img id="proj2-main-slide-img" src="assets/slides/slide_27.png" alt="Nghiên cứu thị trường" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div id="proj2-main-slide-title" class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded bg-midnight-900/90 text-[11px] font-mono text-cyan-400">
+                Slide 27: Phân Tích Ngành & Thị Trường
+              </div>
+              <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-midnight-900/80 text-[10px] text-slate-300 flex items-center gap-1 group-hover:bg-cyan-500 group-hover:text-midnight-900 transition-colors">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Xem chi tiết</span>
+              </div>
+            </div>
+
+            <!-- Slide Thumbnails Strip -->
+            <div class="grid grid-cols-5 gap-1.5 pt-1">
+              <div onclick="previewDeckSlide('project2', 26, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-cyan-400 aspect-[16/9]" title="Slide 26: Cover">
+                <img src="assets/slides/slide_26.png" class="w-full h-full object-cover">
+              </div>
+              <div onclick="previewDeckSlide('project2', 27, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-cyan-400 aspect-[16/9]" title="Slide 27: Market Analysis">
+                <img src="assets/slides/slide_27.png" class="w-full h-full object-cover">
+              </div>
+              <div onclick="previewDeckSlide('project2', 28, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-cyan-400 aspect-[16/9]" title="Slide 28: Target Audience">
+                <img src="assets/slides/slide_28.png" class="w-full h-full object-cover">
+              </div>
+              <div onclick="previewDeckSlide('project2', 32, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-cyan-400 aspect-[16/9]" title="Slide 32: Model Research">
+                <img src="assets/slides/slide_32.png" class="w-full h-full object-cover">
+              </div>
+              <div onclick="previewDeckSlide('project2', 34, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-cyan-400 aspect-[16/9]" title="Slide 34: Strategic Propose">
+                <img src="assets/slides/slide_34.png" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-white/5">
+            <button onclick="openSlideDeck('project2', 26)" class="w-full py-2.5 rounded-xl bg-cyan-500/15 hover:bg-cyan-500 hover:text-midnight-900 text-cyan-300 font-heading font-semibold text-xs border border-cyan-500/30 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="presentation" class="w-4 h-4"></i>
+              <span>Trình Chiếu Bộ Slide Dự Án (Slide 26 - 36)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CASE STUDY 5: DATA ANALYTICS & MACHINE LEARNING -->
+        <div class="project-card data rounded-3xl glass-panel glass-panel-hover p-6 sm:p-8 space-y-4 transition-all duration-300 border border-blue-500/20 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-xs font-semibold tracking-wide">Data Analyst & Machine Learning</span>
+              <span class="text-xs text-slate-300 font-medium">Python • Google Sheets • ML</span>
+            </div>
+
+            <h3 class="text-xl font-heading font-bold text-white">
+              Phân Tích Dữ Liệu & Học Máy trong Marketing
+            </h3>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Xử lý dữ liệu thô, làm sạch missing data, phân cụm khách hàng theo mô hình RFM, ứng dụng thuật toán Regression & Classification dự đoán hành vi tiêu dùng và trực quan hóa dashboard tự động.
+            </p>
+
+            <!-- Main Slide Preview -->
+            <div id="data-main-frame" class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer" onclick="openSlideDeck('data', 38)">
+              <img id="data-main-slide-img" src="assets/slides/slide_38.png" alt="Phân tích dữ liệu & Machine Learning" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div id="data-main-slide-title" class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded bg-midnight-900/90 text-[11px] font-mono text-blue-400">
+                Slide 38: RFM Classification & Data Visualization
+              </div>
+              <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-midnight-900/80 text-[10px] text-slate-300 flex items-center gap-1 group-hover:bg-blue-500 group-hover:text-midnight-900 transition-colors">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Xem chi tiết</span>
+              </div>
+            </div>
+
+            <!-- Slide Thumbnails Strip -->
+            <div class="grid grid-cols-2 gap-2 pt-1">
+              <div onclick="previewDeckSlide('data', 37, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-blue-400 aspect-[16/9]" title="Slide 37: Data Analysis Cover">
+                <img src="assets/slides/slide_37.png" class="w-full h-full object-cover">
+              </div>
+              <div onclick="previewDeckSlide('data', 38, this)" class="cursor-pointer rounded overflow-hidden border border-white/10 hover:border-blue-400 aspect-[16/9]" title="Slide 38: Machine Learning & RFM">
+                <img src="assets/slides/slide_38.png" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <!-- LIVE PROJECT SHEETS & WORKBOOKS (Trọng tâm dự án theo yêu cầu) -->
+            <div class="space-y-2.5 pt-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                  <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5 text-blue-400"></i>
+                  <span>Bảng Tính & Sheet Dự Án Trực Tiếp:</span>
+                </span>
+                <span class="text-[10px] text-emerald-400 font-medium">Live Google Sheets</span>
+              </div>
+
+              <div class="space-y-2">
+                <!-- Sheet 1: RFM Classification & Full Dataset -->
+                <a href="https://drive.google.com/file/d/1LPvwMRZc0ntfKbQpBmdPu2bhDeRq942m/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-midnight-900/80 hover:bg-midnight-800 border border-blue-500/30 hover:border-blue-400 group transition-all" title="Mở Google Drive: Full Dataset Excel RFM (164 MB)">
+                  <div class="flex items-center gap-2.5 min-w-0 pr-2">
+                    <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:scale-105 transition-transform shrink-0">
+                      <i data-lucide="table" class="w-4 h-4"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <div class="text-xs font-semibold text-white group-hover:text-blue-300 flex items-center gap-1.5 truncate">
+                        <span>Sheet Phân Cụm RFM & K-Means Model</span>
+                        <span class="text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-mono flex-none">Google Drive • 164 MB</span>
+                      </div>
+                      <p class="text-[11px] text-slate-300 truncate">Mô hình phân tầng Recency, Frequency, Monetary & thuật toán K-Means Clustering</p>
+                    </div>
+                  </div>
+                  <i data-lucide="external-link" class="w-4 h-4 text-blue-400/80 group-hover:text-blue-300 shrink-0"></i>
+                </a>
+
+                <!-- Sheet 2: Machine Learning Task -->
+                <a href="https://docs.google.com/spreadsheets/d/1qscYAgsPflv_e7S08G9SNAlojOcRk3CH/edit?usp=drive_link&ouid=105633451363647099113&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-midnight-900/80 hover:bg-midnight-800 border border-blue-500/30 hover:border-blue-400 group transition-all" title="Mở Google Sheets: Machine Learning Task">
+                  <div class="flex items-center gap-2.5 min-w-0 pr-2">
+                    <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform shrink-0">
+                      <i data-lucide="binary" class="w-4 h-4"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <div class="text-xs font-semibold text-white group-hover:text-blue-300 flex items-center gap-1.5 truncate">
+                        <span>Sheet Machine Learning (Regression & Classification)</span>
+                        <span class="text-[10px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-300 font-mono flex-none">Google Sheet</span>
+                      </div>
+                      <p class="text-[11px] text-slate-300 truncate">Làm sạch Missing Data, chuẩn hóa dữ liệu & chạy thuật toán dự đoán</p>
+                    </div>
+                  </div>
+                  <i data-lucide="external-link" class="w-4 h-4 text-blue-400/80 group-hover:text-blue-300 shrink-0"></i>
+                </a>
+
+                <!-- File 3: Data Visualization Report -->
+                <a href="https://drive.google.com/file/d/1B9aIQDli5FvrJaoQ9cxnOXaG7PM0OvuV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-midnight-900/80 hover:bg-midnight-800 border border-white/10 hover:border-cyan-400 group transition-all" title="Mở báo cáo Google Drive: Data Visualization Report">
+                  <div class="flex items-center gap-2.5 min-w-0 pr-2">
+                    <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 group-hover:scale-105 transition-transform shrink-0">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <div class="text-xs font-semibold text-white group-hover:text-cyan-300 flex items-center gap-1.5 truncate">
+                        <span>Báo Cáo Trực Quan Hóa (Data Visualization)</span>
+                        <span class="text-[10px] px-1.5 py-0.2 rounded bg-cyan-500/20 text-cyan-300 font-mono flex-none">Google Drive</span>
+                      </div>
+                      <p class="text-[11px] text-slate-300 truncate">Báo cáo biểu đồ dashboard trực quan hóa toàn bộ insight dự án</p>
+                    </div>
+                  </div>
+                  <i data-lucide="external-link" class="w-4 h-4 text-cyan-400/80 group-hover:text-cyan-300 shrink-0"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-white/5 flex flex-col sm:flex-row gap-2">
+            <a href="https://drive.google.com/file/d/1LPvwMRZc0ntfKbQpBmdPu2bhDeRq942m/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 rounded-xl bg-blue-500 text-midnight-950 font-heading font-bold text-xs hover:bg-blue-400 transition-all flex items-center justify-center gap-1.5 shadow-sm" title="Tải và xem toàn bộ dữ liệu 164 MB trên Google Drive">
+              <i data-lucide="hard-drive" class="w-4 h-4"></i>
+              <span>Tải Full Dataset (164 MB)</span>
+            </a>
+            <button onclick="openSlideDeck('data', 38)" class="flex-1 py-2.5 px-3 rounded-xl bg-midnight-800 hover:bg-midnight-700 text-slate-200 hover:text-white font-heading font-medium text-xs border border-white/10 hover:border-blue-500/50 transition-all flex items-center justify-center gap-1.5">
+              <i data-lucide="presentation" class="w-4 h-4 text-blue-400"></i>
+              <span>Xem Slide Đề Án</span>
+            </button>
+          </div>
+        </div>
+
+              </div>
+
+    </div>
+  </section>
+
+  <!-- HONORS, AWARDS & INTERNATIONAL CONFERENCES -->
+  <section id="awards" class="py-20 border-t border-white/5 bg-midnight-800/40 relative overflow-hidden">
+    <!-- Ambient Soft Glow -->
+    <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[34rem] h-[34rem] bg-amber-500/[0.03] rounded-full blur-[150px] -z-10"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-2 max-w-2xl">
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Học Thuật & Công Nhận Quốc Tế</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white">Giải Thưởng & Hội Thảo Khoa Học Quốc Tế</h2>
+          <p class="text-slate-400 text-sm">Hình ảnh thực chứng cho năng lực nghiên cứu phương pháp luận chuẩn xác, giao lưu học thuật khu vực và kỹ năng thuyết trình quốc tế</p>
+        </div>
+        
+        <button onclick="openSlideDeck('research', 4)" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 hover:from-emerald-500/30 hover:to-cyan-500/30 border border-emerald-500/30 text-emerald-300 font-heading font-semibold text-xs transition-all flex items-center gap-2 self-start md:self-auto shadow-glow">
+          <i data-lucide="presentation" class="w-4 h-4 text-emerald-400"></i>
+          <span>Trình Chiếu 7 Slide Học Thuật (Slide 4 - 10)</span>
+        </button>
+      </div>
+
+      <!-- Grid of 7 Milestones + 1 Publication Feature Card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- CARD 1: SCHOOL VISIT ĐHQG MALAYSIA (UKM) -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-amber-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/malaysia_ukm_group.jpg', 'School Visit tại Đại học Quốc gia Malaysia (UKM) - Giao lưu học thuật quốc tế')">
+              <img src="assets/images/awards_real/malaysia_ukm_group.jpg" alt="School Visit UKM Malaysia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-[10px] font-bold text-amber-300 uppercase tracking-wider">
+                Giao Lưu Quốc Tế • Malaysia
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-amber-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-amber-300 transition-colors">School Visit - ĐHQG Malaysia (UKM)</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Chuyến thăm, học tập và giao lưu học thuật tại trường Đại học Quốc gia Malaysia (Universiti Kebangsaan Malaysia), mở rộng góc nhìn học thuật và phương pháp nghiên cứu khu vực.</p>
+            </div>
+          </div>
+
+          <!-- Action & Extra Photos -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-medium">Ảnh khác:</span>
+              <img src="assets/images/awards_real/malaysia_ukm_tien.jpg" onclick="openModal('assets/images/awards_real/malaysia_ukm_tien.jpg', 'Duy Tiến tại khuôn viên Đại học Quốc gia Malaysia (UKM)')" alt="Duy Tiến UKM" class="w-9 h-9 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-amber-400 hover:scale-110 transition-all shadow-sm" title="Duy Tiến tại khuôn viên UKM">
+            </div>
+            <button onclick="openSlideDeck('research', 9)" class="text-[11px] text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+              <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+              <span>Xem Slide 09</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2: EURÉKA 2 MÙA LIÊN TIẾP -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-emerald-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/eureka_certificate.jpg', 'Bằng khen chính thức Giải Thưởng Sinh Viên NCKH Toàn Quốc Euréka')">
+              <img src="assets/images/awards_real/eureka_certificate.jpg" alt="Giải Euréka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-[10px] font-bold text-emerald-300 uppercase tracking-wider">
+                Euréka Toàn Quốc • 2 Mùa 2024 & 2025
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-emerald-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-emerald-300 transition-colors">Giải Thưởng NCKH Euréka (2 Mùa)</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Đạt giải 2 mùa liên tiếp 2024 & 2025 tại giải thưởng sinh viên nghiên cứu khoa học danh giá nhất toàn quốc. Minh chứng tính kiên trì và tư duy phân tích định lượng chuẩn mực.</p>
+            </div>
+          </div>
+
+          <!-- Action & Extra Photos -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-1.5">
+              <span class="text-xs text-slate-400 font-medium">Ảnh khác:</span>
+              <img src="assets/images/awards_real/eureka_stage.jpg" onclick="openModal('assets/images/awards_real/eureka_stage.jpg', 'Sân khấu vinh danh trao giải Euréka')" alt="Sân khấu" class="w-8 h-8 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-emerald-400 hover:scale-110 transition-all shadow-sm" title="Sân khấu trao giải">
+              <img src="assets/images/awards_real/eureka_ceremony.jpg" onclick="openModal('assets/images/awards_real/eureka_ceremony.jpg', 'Khoảnh khắc trao giải Euréka')" alt="Lễ trao giải" class="w-8 h-8 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-emerald-400 hover:scale-110 transition-all shadow-sm" title="Lễ trao giải">
+              <img src="assets/images/awards_real/eureka_medal.jpg" onclick="openModal('assets/images/awards_real/eureka_medal.jpg', 'Huy chương & Kỷ niệm chương Euréka')" alt="Huy chương" class="w-8 h-8 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-emerald-400 hover:scale-110 transition-all shadow-sm" title="Huy chương & Kỷ niệm chương">
+            </div>
+            <button onclick="openSlideDeck('research', 7)" class="text-[11px] text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+              <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+              <span>Xem Slide 07</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3: BỘ KH&CN IMPACT CUP 2025 -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-amber-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/impact_cup_stage.jpg', 'Lễ trao giải Research with Impact Cup 2025 do Bộ KH&CN tổ chức')">
+              <img src="assets/images/awards_real/impact_cup_stage.jpg" alt="Bộ KH&CN Award Stage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-[10px] font-bold text-amber-300 uppercase tracking-wider">
+                Bộ Khoa Học & Công Nghệ • 2025
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-amber-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-amber-300 transition-colors">Research with Impact Cup 2025</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Giải Nghiên cứu xuất sắc về Chuyển đổi số, Phục vụ cộng đồng do Bộ KH&CN tổ chức, ghi nhận các giải pháp nghiên cứu mang lại tác động thực tiễn cho cộng đồng.</p>
+            </div>
+          </div>
+
+          <!-- Action & Extra Photos -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-medium">Ảnh khác:</span>
+              <img src="assets/images/awards_real/impact_cup_trophy.jpg" onclick="openModal('assets/images/awards_real/impact_cup_trophy.jpg', 'Cúp vinh danh và Bằng khen Nghiên cứu xuất sắc')" alt="Cúp Impact Cup" class="w-9 h-9 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-amber-400 hover:scale-110 transition-all shadow-sm" title="Cúp & Bằng khen">
+            </div>
+            <button onclick="openSlideDeck('research', 6)" class="text-[11px] text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+              <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+              <span>Xem Slide 06</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4: ITU SINGAPORE 2026 -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-cyan-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/itu_singapore_backdrop.jpg', 'Báo cáo viên tại Hội thảo Quốc tế ITU 2026 - Grand Mercure Singapore Roxy')">
+              <img src="assets/images/awards_real/itu_singapore_backdrop.jpg" alt="ITU Singapore Backdrop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-cyan-500/20 backdrop-blur-md border border-cyan-500/40 text-[10px] font-bold text-cyan-300 uppercase tracking-wider">
+                Singapore • 2026
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-cyan-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Báo Cáo Tại Hội Thảo Quốc Tế ITU</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Diễn giả quốc tế báo cáo công trình nghiên cứu ứng dụng AI (Human-AI Partnership) tại International TESOL Union Conference tổ chức tại Singapore (Grand Mercure Roxy).</p>
+            </div>
+          </div>
+
+          <!-- Action & Extra Photos -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-medium">Ảnh khác:</span>
+              <img src="assets/images/avatar_full.jpg" onclick="openModal('assets/images/avatar_full.jpg', 'Duy Tiến tại Singapore trong chuyến công tác học thuật')" alt="Duy Tiến tại Singapore" class="w-9 h-9 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-cyan-400 hover:scale-110 transition-all shadow-sm" title="Ảnh ngoài trời tại Singapore">
+            </div>
+            <button onclick="openSlideDeck('research', 8)" class="text-[11px] text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+              <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+              <span>Xem Slide 08</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 5: IEEE ICLIE 2024 -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-blue-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/ieee_presenting.jpg', 'Báo cáo công trình tại Hội thảo Quốc tế ICLIE do IEEE bảo trợ')">
+              <img src="assets/images/awards_real/ieee_presenting.jpg" alt="IEEE ICLIE Presentation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-blue-500/20 backdrop-blur-md border border-blue-500/40 text-[10px] font-bold text-blue-300 uppercase tracking-wider">
+                IEEE Bảo Trợ • 2024
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-blue-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-blue-300 transition-colors">Hội Thảo Quốc Tế ICLIE - IEEE</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Báo cáo công trình tại Hội thảo Quốc tế Logistics & Kỹ thuật Công nghiệp do IEEE bảo trợ. Công trình đạt tiêu chuẩn phản biện học thuật chuyên gia độc lập.</p>
+            </div>
+          </div>
+
+          <!-- Action & Extra Photos -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-medium">Ảnh khác:</span>
+              <img src="assets/images/awards_real/ieee_portrait.jpg" onclick="openModal('assets/images/awards_real/ieee_portrait.jpg', 'Duy Tiến tại Hội thảo Quốc tế IEEE ICLIE')" alt="Duy Tiến IEEE" class="w-9 h-9 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-blue-400 hover:scale-110 transition-all shadow-sm" title="Ảnh tại Hội thảo IEEE">
+            </div>
+            <div class="flex items-center gap-2">
+              <a href="https://doi.org/10.1109/ICLIE61478.2024.11015395" target="_blank" rel="noopener noreferrer" class="text-[11px] text-cyan-400 hover:text-cyan-300 font-mono inline-flex items-center gap-1 transition-colors" title="Xem bài báo trên IEEE Xplore">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>Link DOI</span>
+              </a>
+              <button onclick="openSlideDeck('research', 4)" class="text-[11px] text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+                <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+                <span>Xem Slide 04</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6: ISSF 2024 -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-purple-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/issf_group.jpg', 'Đại biểu tham dự Diễn đàn Khoa học Sinh viên Quốc tế ISSF 2024')">
+              <img src="assets/images/awards_real/issf_group.jpg" alt="ISSF 2024 Group" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-purple-500/20 backdrop-blur-md border border-purple-500/40 text-[10px] font-bold text-purple-300 uppercase tracking-wider">
+                Diễn Đàn Quốc Tế • 2024
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-purple-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Hội Thảo Quốc Tế ISSF 2024</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Đại biểu tham gia Diễn đàn Khoa học Sinh viên Quốc tế ISSF 2024 (International Student Science Forum), tranh luận học thuật và kết nối cùng các nhà nghiên cứu trẻ khu vực.</p>
+            </div>
+          </div>
+
+          <!-- Action & Extra Photos -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-1.5">
+              <span class="text-xs text-slate-400 font-medium">Ảnh khác:</span>
+              <img src="assets/images/awards_real/issf_session.jpg" onclick="openModal('assets/images/awards_real/issf_session.jpg', 'Phiên thảo luận tại Diễn đàn ISSF 2024')" alt="Phiên thảo luận" class="w-8 h-8 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-purple-400 hover:scale-110 transition-all shadow-sm" title="Phiên thảo luận học thuật">
+              <img src="assets/images/awards_real/issf_badge.jpg" onclick="openModal('assets/images/awards_real/issf_badge.jpg', 'Thẻ đại biểu chính thức ISSF 2024')" alt="Thẻ đại biểu" class="w-8 h-8 rounded-lg object-cover cursor-pointer border border-white/10 hover:border-purple-400 hover:scale-110 transition-all shadow-sm" title="Thẻ đại biểu chính thức">
+            </div>
+            <button onclick="openSlideDeck('research', 5)" class="text-[11px] text-purple-400 hover:text-purple-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+              <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+              <span>Xem Slide 05</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 7: ICTE 2026 -->
+        <div class="rounded-2xl glass-panel glass-panel-hover p-6 flex flex-col justify-between group transition-all duration-300 border border-emerald-500/20">
+          <div class="space-y-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[16/10] cursor-pointer" onclick="openModal('assets/images/awards_real/icte_presenting.jpg', 'Thuyết trình tại Hội thảo Khoa học Quốc tế ICTE 2026')">
+              <img src="assets/images/awards_real/icte_presenting.jpg" alt="ICTE Presentation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-[10px] font-bold text-emerald-300 uppercase tracking-wider">
+                Hội Thảo Quốc Tế • 2026
+              </div>
+              <div class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded-md bg-midnight-900/80 backdrop-blur-md text-[10px] text-slate-300 flex items-center gap-1 group-hover:text-emerald-300">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                <span>Phóng to</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-base text-white group-hover:text-emerald-300 transition-colors">Báo Cáo Tại Hội Thảo ICTE 2026</h3>
+              <p class="text-slate-400 text-xs mt-1.5 leading-relaxed">Diễn giả thuyết trình công trình nghiên cứu trước hội đồng khoa học tại Hội thảo Khoa học Quốc tế ICTE 2026 tổ chức ở ĐH Công Nghiệp TP.HCM.</p>
+            </div>
+          </div>
+
+          <!-- Action -->
+          <div class="pt-3.5 border-t border-white/5 mt-4 flex items-center justify-between gap-2">
+            <span class="text-[10px] text-emerald-400 font-mono flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              Báo cáo viên chính thức
+            </span>
+            <button onclick="openSlideDeck('research', 10)" class="text-[11px] text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 transition-colors font-medium text-xs">
+              <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+              <span>Xem Slide 10</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 8: SCOPUS / IEEE PUBLICATION HIGHLIGHT (SPAN 2 COLS ON LG) -->
+        <div class="lg:col-span-2 rounded-2xl glass-panel p-6 flex flex-col justify-between border border-cyan-500/30 bg-gradient-to-br from-cyan-950/20 via-midnight-900/60 to-midnight-950">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
+                <i data-lucide="book-check" class="w-3.5 h-3.5"></i>
+                <span>IEEE XPLORE & SCOPUS COMPLIANT</span>
+              </span>
+              <a href="https://doi.org/10.1109/ICLIE61478.2024.11015395" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 font-mono underline underline-offset-4 decoration-cyan-500/50 hover:decoration-cyan-400 transition-colors">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>DOI: 10.1109/ICLIE61478.2024.11015395</span>
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-xl sm:text-2xl font-heading font-bold text-white leading-snug">
+                ESG's Impact on Awareness and Behavior of Users and Providers in Vietnamese Higher Education
+              </h3>
+              <p class="text-xs text-slate-400 font-mono mt-1.5">
+                Tác giả: Le Vu Lan Oanh, <strong class="text-cyan-300 font-bold">Nguyen Duy Tien</strong>, Phan Thanh Ngan, Tran Ngoc My • <em>IEEE ICLIE 2024</em>
+              </p>
+              <p class="text-slate-300 text-sm mt-2.5 leading-relaxed">
+                Công trình nghiên cứu khoa học chính thức xuất bản trên thư viện số quốc tế <strong class="text-white font-medium">IEEE Xplore</strong> sau quy trình bình duyệt phản biện kín độc lập (Peer-Reviewed). Nghiên cứu ứng dụng mô hình định lượng phân tích tác động của ESG đến nhận thức và hành vi, khẳng định năng lực phương pháp luận nghiên cứu thực chứng chuẩn mực.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 border-t border-white/10">
+              <div class="space-y-0.5">
+                <span class="text-xs text-cyan-400 font-medium block">Nền Tảng Xuất Bản</span>
+                <p class="text-xs font-semibold text-white">IEEE Xplore Digital Library</p>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-xs text-emerald-400 font-medium block">Tiêu Chuẩn Học Thuật</span>
+                <p class="text-xs font-semibold text-white">Peer-Reviewed Quốc Tế</p>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-xs text-amber-400 font-medium block">Định Danh Khoa Học</span>
+                <p class="text-xs font-semibold text-white">Official DOI Indexed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5 mt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+            <a href="https://doi.org/10.1109/ICLIE61478.2024.11015395" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-cyan-500 text-midnight-900 font-bold hover:bg-cyan-400 shadow-glow transition-all flex items-center gap-2">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Xem Bài Báo Trên IEEE Xplore (DOI)</span>
+            </a>
+            <button onclick="openSlideDeck('research', 4)" class="px-4 py-2.5 rounded-xl bg-midnight-800/80 hover:bg-midnight-700 text-slate-200 hover:text-white border border-white/10 hover:border-cyan-500/50 transition-all flex items-center gap-1.5 font-medium">
+              <i data-lucide="presentation" class="w-4 h-4 text-cyan-400"></i>
+              <span>Xem Slide Báo Cáo Học Thuật</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CERTIFICATIONS MATRIX -->
+      <div class="mt-8 pt-8 border-t border-white/5">
+        <div class="flex items-center gap-2 mb-4">
+          <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+          <span class="text-xs font-bold text-slate-300 uppercase tracking-widest">Chứng Chỉ Chuyên Môn Đã Xác Thực (Certifications)</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div class="p-3 rounded-xl bg-midnight-900/80 border border-white/5 space-y-1">
+            <span class="text-[10px] font-bold text-emerald-400 uppercase">Google</span>
+            <p class="text-xs font-semibold text-white leading-tight">Digital Marketing & E-commerce</p>
+          </div>
+          <div class="p-3 rounded-xl bg-midnight-900/80 border border-white/5 space-y-1">
+            <span class="text-[10px] font-bold text-cyan-400 uppercase">Google</span>
+            <p class="text-xs font-semibold text-white leading-tight">Foundations: Data Everywhere</p>
+          </div>
+          <div class="p-3 rounded-xl bg-midnight-900/80 border border-white/5 space-y-1">
+            <span class="text-[10px] font-bold text-blue-400 uppercase">Google</span>
+            <p class="text-xs font-semibold text-white leading-tight">Google AI Essentials</p>
+          </div>
+          <div class="p-3 rounded-xl bg-midnight-900/80 border border-white/5 space-y-1">
+            <span class="text-[10px] font-bold text-indigo-400 uppercase">IBM</span>
+            <p class="text-xs font-semibold text-white leading-tight">AI Workflow & Machine Learning</p>
+          </div>
+          <div class="p-3 rounded-xl bg-midnight-900/80 border border-white/5 space-y-1">
+            <span class="text-[10px] font-bold text-amber-400 uppercase">ĐH Văn Lang</span>
+            <p class="text-xs font-semibold text-white leading-tight">Teaching Assistant: Research</p>
+          </div>
+          <div class="p-3 rounded-xl bg-midnight-900/80 border border-white/5 space-y-1">
+            <span class="text-[10px] font-bold text-purple-400 uppercase">Aptis ESOL</span>
+            <p class="text-xs font-semibold text-white leading-tight">English CEFR B2</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE & EDUCATION TIMELINE -->
+  <section id="experience" class="py-20 bg-midnight-900 border-t border-white/5">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-2">
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Hành Trình Sự Nghiệp & Thực Chiến</span>
+        <h2 class="text-3xl font-heading font-bold text-white">Kinh Nghiệm Chuyên Môn</h2>
+        <p class="text-slate-400 text-sm">Kinh nghiệm thực tế từ Agency nghiên cứu thị trường, quản lý dữ liệu đến công tác học thuật</p>
+      </div>
+
+      <div class="relative border-l-2 border-white/10 ml-4 sm:ml-8 space-y-12">
+
+        <!-- Role 1: VINAMR (NEW & TOP PRIORITY) -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-400 ring-4 ring-midnight-900 shadow-glow"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <div class="flex items-center gap-2">
+              <h3 class="font-heading font-bold text-lg text-white">Field Operator (Full-time Collaborator)</h3>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] font-bold">HIỆN TẠI</span>
+            </div>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md w-fit">09/2026 - Nay</span>
+          </div>
+          <p class="text-xs text-emerald-400/90 font-medium mb-3">VINAMR Marketing Research & Consultants</p>
+          <ul class="space-y-2.5 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 flex-none"></span>
+              <div>
+                <strong class="text-white font-medium">Data Quality Control (QC):</strong>
+                Thực hiện kiểm soát chất lượng dữ liệu khắt khe đối với bảng câu hỏi sau khảo sát (post-survey questionnaires), đảm bảo tính nhất quán logic, độ chính xác và tính phù hợp trước khi đưa vào phân tích chuyên sâu.
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 flex-none"></span>
+              <div>
+                <strong class="text-white font-medium">Project & Quota Execution:</strong>
+                Lập kế hoạch quy trình làm việc (project workflows), phân bổ nguồn lực và kiểm soát hạn ngạch mẫu (sample quotas) qua các dự án nghiên cứu được phân công để đảm bảo bàn giao đúng hạn, đúng ngân sách.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 2: The Practicum Content Editor -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 ring-4 ring-midnight-900"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <h3 class="font-heading font-bold text-lg text-white">Content Editor (Part-time)</h3>
+            <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-md w-fit">03/2026 - Nay</span>
+          </div>
+          <p class="text-xs text-cyan-400/90 font-medium mb-3">Tập san Khoa học "The Practicum: From Vision to Action"</p>
+          <ul class="space-y-2.5 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 flex-none"></span>
+              <div>
+                <strong class="text-white font-medium">Report & Content Standardization:</strong>
+                Biên soạn và hiệu đính bản thảo nghiên cứu học thuật, đảm bảo độ chuẩn xác về ngôn ngữ, tính nhất quán về định dạng và tính rõ ràng của toàn bộ ấn phẩm được công bố.
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 flex-none"></span>
+              <div>
+                <strong class="text-white font-medium">Stakeholder Coordination:</strong>
+                Phối hợp cùng ban cố vấn và hội đồng chuyên môn tuyển chọn chủ đề nghiên cứu chuyên sâu, đồng thời hỗ trợ triển khai truyền thông nhằm lan tỏa ấn phẩm đến cộng đồng nghiên cứu và giáo dục.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 3: Quantitative Research Mentor -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-midnight-900"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <h3 class="font-heading font-bold text-lg text-white">Research & Data Analysis Mentor (Freelance)</h3>
+            <span class="text-xs font-mono text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md w-fit">01/2026 - Nay</span>
+          </div>
+          <p class="text-xs text-blue-400/90 font-medium mb-3">Quantitative Research Support</p>
+          <ul class="space-y-2 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="text-blue-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Quantitative Analysis:</strong> Ứng dụng phân tích thống kê nâng cao và thuật toán Machine Learning để phân tích các tập dữ liệu phức tạp, xây dựng báo cáo trực quan hóa dữ liệu có tác động cao.</div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-blue-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Methodology & Insight Consultation:</strong> Cố vấn sinh viên đại học và học viên cao học về khung thiết kế nghiên cứu (research design frameworks), xử lý khúc mắc phương pháp luận và diễn giải dữ liệu chuyên sâu.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 4: Fastlance -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-500 ring-4 ring-midnight-900"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <h3 class="font-heading font-bold text-lg text-white">Marketing Research & Analytics Intern</h3>
+            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md w-fit">06/2025 - 08/2025</span>
+          </div>
+          <p class="text-xs text-amber-400/90 font-medium mb-3">Fastlance Vietnam Co., Ltd.</p>
+          <ul class="space-y-2 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="text-amber-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Market Research & Competitive Analysis:</strong> Thiết kế bảng khảo sát, thu thập và xử lý dữ liệu cho dự án "Star Freelancer" & báo cáo "Vietnam Freelance Market Report". Thực thi nghiên cứu sơ cấp/thứ cấp xây dựng Competitor Analysis Matrix và Baseline Performance Report.</div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-amber-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">User Analytics & ROI Tracking:</strong> Theo dõi hành trình người dùng (User Journey) và đo lường ROI chiến dịch qua Marketing Analytics Dashboard, chuyển hóa dữ liệu hành vi thành actionable insights.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 5: Truong Hai -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-500 ring-4 ring-midnight-900"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <h3 class="font-heading font-bold text-lg text-white">Social Media Marketing Executive</h3>
+            <span class="text-xs font-mono text-slate-400 bg-slate-500/10 px-2.5 py-1 rounded-md w-fit">01/2024 - 06/2024</span>
+          </div>
+          <p class="text-xs text-slate-400 font-medium mb-2">Trường Hải – Hankhungsat Co., Ltd.</p>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Quản trị vận hành nội dung và đo lường hiệu suất truyền thông trên fanpage và website doanh nghiệp (Hankhungsat.com); nghiên cứu nhu cầu khách hàng qua các kênh trực tuyến để đề xuất sản phẩm và chăm sóc khách hàng.
+          </p>
+        </div>
+
+        <!-- Role 6: Education -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-purple-500 ring-4 ring-midnight-900"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <div class="flex items-center gap-2">
+              <h3 class="font-heading font-bold text-lg text-white">Cử Nhân Digital Marketing | Tốt Nghiệp Loại Giỏi</h3>
+              <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-mono text-[10px] font-bold">GPA: 3.2 / 4.0</span>
+            </div>
+            <span class="text-xs font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-md w-fit">2022 - 2026</span>
+          </div>
+          <p class="text-xs text-purple-400/90 font-medium mb-2">Trường Đại học Văn Lang (Van Lang University)</p>
+          <ul class="space-y-1.5 text-slate-300 text-sm leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Học bổng Khuyến khích học tập</strong> (Academic Merit Scholarship) năm học 2024–2025.</div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Danh hiệu Sinh viên Tiêu biểu</strong> cấp trường – Van Lang University (2025).</div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Chứng nhận Trợ giảng (TA)</strong> Nghiên cứu Marketing tại Trường ĐH Văn Lang.</div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-400 font-bold mt-0.5">●</span>
+              <div><strong class="text-white font-medium">Tiếng Anh:</strong> CEFR Level B2 (Aptis ESOL International).</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & CV DOWNLOAD -->
+  <section id="contact" class="py-24 border-t border-white/5 bg-gradient-to-b from-midnight-900 to-midnight-800 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
+        <span>Let's Build Impact Together</span>
+      </div>
+
+      <div class="space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white">
+          Sẵn Sàng Đồng Hành Cùng Doanh Nghiệp
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+          Nếu quý doanh nghiệp đang tìm kiếm một nhân sự <strong class="text-white">Product Marketing, Performance Marketing hoặc Market Research</strong> có tư duy chiến lược và năng lực giải quyết bài toán bằng dữ liệu thực chứng, tôi rất sẵn lòng trao đổi chi tiết.
+        </p>
+      </div>
+
+      <!-- Quick Action Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left max-w-2xl mx-auto">
+        
+        <div onclick="copyToClipboard('tien23247@gmail.com', 'Đã chép Email: tien23247@gmail.com')" class="p-4 rounded-xl glass-panel glass-panel-hover cursor-pointer group transition-all">
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span>Email</span>
+            <i data-lucide="copy" class="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <p class="text-sm font-semibold text-white mt-1 truncate">tien23247@gmail.com</p>
+          <p class="text-[10px] text-slate-400 mt-0.5">Click để sao chép</p>
+        </div>
+
+        <a href="https://zalo.me/0822243854" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl glass-panel glass-panel-hover group transition-all block">
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span>Điện thoại / Zalo</span>
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <p class="text-sm font-semibold text-white mt-1">+84 82 224 3854</p>
+          <p class="text-[10px] text-emerald-400 mt-0.5">Nhấn để nhắn Zalo ngay</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/nguyen-duy-tien" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl glass-panel glass-panel-hover group transition-all block">
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span>LinkedIn Official</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 text-cyan-400 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <p class="text-sm font-semibold text-white mt-1 truncate">linkedin.com/in/nguyen-duy-tien</p>
+          <p class="text-[10px] text-slate-400 mt-0.5">Xem hồ sơ cá nhân</p>
+        </a>
+
+      </div>
+
+      <!-- CV Download Options (Clean, non-nested cards) -->
+      <div class="max-w-2xl mx-auto space-y-4 text-left">
+        <div class="flex items-center justify-between px-1">
+          <div class="flex items-center gap-2 text-white font-heading font-semibold text-sm">
+            <i data-lucide="file-text" class="w-4 h-4 text-emerald-400"></i>
+            <span>Tải hồ sơ ứng tuyển chính thức:</span>
+          </div>
+          <span class="text-xs text-emerald-400 font-medium">Bản cập nhật 2026</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="assets/cv/CV_Nguyen_Duy_Tien_Market_Research_Latest.pdf" download class="p-4 rounded-xl glass-panel border border-emerald-500/40 hover:border-emerald-400 transition-all flex flex-col justify-between group shadow-glow">
+            <div>
+              <span class="text-xs font-bold text-white group-hover:text-emerald-300 block">Market Research</span>
+              <span class="text-xs text-emerald-400">Bản mới nhất (VINAMR)</span>
+            </div>
+            <span class="text-xs text-slate-300 flex items-center gap-1.5 mt-3 font-medium">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-emerald-400"></i>
+              Tải CV Executive (PDF)
+            </span>
+          </a>
+
+          <a href="assets/cv/CV_Nguyen_Duy_Tien_Product_Marketing.pdf" download class="p-4 rounded-xl glass-panel border border-white/10 hover:border-cyan-500/50 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-xs font-semibold text-slate-200 group-hover:text-cyan-400 block">Product Marketing</span>
+              <span class="text-xs text-slate-400">Chuyên sâu sản phẩm</span>
+            </div>
+            <span class="text-xs text-slate-300 flex items-center gap-1.5 mt-3">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-cyan-400"></i>
+              Tải CV Product (PDF)
+            </span>
+          </a>
+
+          <a href="assets/cv/CV_Nguyen_Duy_Tien_Performance_Marketing.pdf" download class="p-4 rounded-xl glass-panel border border-white/10 hover:border-blue-500/50 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-xs font-semibold text-slate-200 group-hover:text-blue-400 block">Performance & Data</span>
+              <span class="text-xs text-slate-400">Growth & Ads Optimization</span>
+            </div>
+            <span class="text-xs text-slate-300 flex items-center gap-1.5 mt-3">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-blue-400"></i>
+              Tải CV Growth (PDF)
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-white/5 bg-midnight-900 text-center text-xs text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Nguyễn Duy Tiến. Thiết kế với tinh thần tối giản, chuẩn mực và khoa học.</p>
+      <div class="flex items-center gap-4 text-slate-400">
+        <a href="#hero" class="hover:text-white transition-colors">Lên đầu trang ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SLIDE & IMAGE LIGHTBOX / VIEWER MODAL -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-2xl hidden flex flex-col justify-between p-3 sm:p-6" onclick="closeModal(event)">
+    
+    <!-- Modal Top Bar -->
+    <div class="w-full max-w-6xl mx-auto flex items-center justify-between z-10 py-2 border-b border-white/10">
+      <div class="flex items-center gap-3 min-w-0 pr-4">
+        <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-400 font-mono text-[11px] font-bold flex-none" id="modal-badge">SLIDE VIEW</span>
+        <h3 id="modal-caption" class="text-xs sm:text-sm md:text-base font-heading font-semibold text-white truncate"></h3>
+        
+        <!-- Quick Sheet Action Buttons for Data Deck -->
+        <div id="modal-data-links" class="hidden items-center gap-2 flex-wrap">
+          <a href="https://drive.google.com/file/d/1LPvwMRZc0ntfKbQpBmdPu2bhDeRq942m/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-2 py-0.5 rounded bg-emerald-500/20 hover:bg-emerald-500 hover:text-midnight-950 text-emerald-300 text-[11px] font-semibold flex items-center gap-1 border border-emerald-500/30 transition-all" title="Tải toàn bộ Dataset 164 MB trên Google Drive">
+            <i data-lucide="hard-drive" class="w-3 h-3"></i>
+            <span>Full Dataset (164 MB)</span>
+          </a>
+          <a href="https://docs.google.com/spreadsheets/d/1qscYAgsPflv_e7S08G9SNAlojOcRk3CH/edit?usp=drive_link&ouid=105633451363647099113&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="px-2 py-0.5 rounded bg-blue-500/20 hover:bg-blue-500 hover:text-midnight-950 text-blue-300 text-[11px] font-semibold flex items-center gap-1 border border-blue-500/30 transition-all" title="Mở bảng tính Google Sheets">
+            <i data-lucide="binary" class="w-3 h-3"></i>
+            <span>Mở Sheet ML</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1B9aIQDli5FvrJaoQ9cxnOXaG7PM0OvuV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="px-2 py-0.5 rounded bg-cyan-500/20 hover:bg-cyan-500 hover:text-midnight-950 text-cyan-300 text-[11px] font-semibold flex items-center gap-1 border border-cyan-500/30 transition-all" title="Mở báo cáo Google Drive">
+            <i data-lucide="bar-chart-3" class="w-3 h-3"></i>
+            <span>Báo Cáo Drive</span>
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 flex-none">
+        <span id="modal-counter" class="text-xs font-mono text-emerald-400 bg-midnight-800 px-2 py-1 rounded border border-white/10"></span>
+        <button onclick="closeModalDirect()" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white transition-all" title="Đóng (ESC)">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Slide Display Area -->
+    <div id="modal-backdrop-area" class="relative flex-1 flex items-center justify-center my-3 max-h-[76vh]" onclick="closeModal(event)">
+      <!-- Prev Button -->
+      <button id="modal-prev-btn" onclick="prevSlide(event)" class="absolute left-2 sm:left-4 z-20 p-3 rounded-full bg-midnight-900/90 hover:bg-emerald-500 hover:text-midnight-900 text-white border border-white/15 shadow-2xl backdrop-blur-md transition-all group" title="Slide trước (←)">
+        <i data-lucide="chevron-left" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+      </button>
+
+      <!-- Slide Image -->
+      <div class="relative max-w-5xl max-h-full flex items-center justify-center p-1 sm:p-2 cursor-pointer" onclick="nextSlide(event)" title="Nhấn vào ảnh để xem slide tiếp theo">
+        <img id="modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Slide preview" class="max-h-[73vh] w-auto max-w-full rounded-xl shadow-2xl object-contain border border-white/20 bg-midnight-950 hover:scale-[1.005] transition-transform">
+      </div>
+
+      <!-- Next Button -->
+      <button id="modal-next-btn" onclick="nextSlide(event)" class="absolute right-2 sm:right-4 z-20 p-3 rounded-full bg-midnight-900/90 hover:bg-emerald-500 hover:text-midnight-900 text-white border border-white/15 shadow-2xl backdrop-blur-md transition-all group" title="Slide sau (→)">
+        <i data-lucide="chevron-right" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+      </button>
+    </div>
+
+    <!-- Bottom Controls & Hints -->
+    <div class="w-full max-w-6xl mx-auto flex items-center justify-between text-xs text-slate-400 py-2 border-t border-white/10">
+      <div class="flex items-center gap-2">
+        <i data-lucide="keyboard" class="w-4 h-4 text-emerald-400"></i>
+        <span>Phím tắt: <strong>←</strong> (lùi) / <strong>→</strong> (tiến) / <strong>ESC</strong> (đóng)</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <button onclick="openOriginalImage()" class="hover:text-emerald-400 flex items-center gap-1.5 transition-colors">
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          <span>Mở ảnh kích thước gốc</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- INTERACTIVE JAVASCRIPT -->
+  <script>
+    // Initialize Lucide Icons
+    if (window.lucide && lucide.createIcons) {
+      lucide.createIcons();
+    }
+
+    // Copy to clipboard utility with toast feedback
+    function copyToClipboard(text, message) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(message || "Đã sao chép vào bộ nhớ tạm!");
+        }).catch(() => {
+          showToast("Vui lòng sao chép thủ công: " + text);
+        });
+      } else {
+        showToast("Đã sao chép: " + text);
+      }
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById("toast");
+      const toastText = document.getElementById("toast-text");
+      if (!toast || !toastText) return;
+      toastText.innerText = text;
+      toast.classList.remove("translate-y-20", "opacity-0");
+      toast.classList.add("translate-y-0", "opacity-100");
+      setTimeout(() => {
+        toast.classList.remove("translate-y-0", "opacity-100");
+        toast.classList.add("translate-y-20", "opacity-0");
+      }, 2500);
+    }
+
+    // SLIDE DECKS DATABASE
+    const DECKS = {
+      standtistics: [
+        { num: 1, src: "assets/images/standtistics/scene_01.png", title: "Slide 01: Bối Cảnh NCKH & Trở Ngại Lịch Sử: Chi Phí Đắt Đỏ & Công Cụ Phân Mảnh" },
+        { num: 2, src: "assets/images/standtistics/scene_02.png", title: "Slide 02: Giới Thiệu StaNDTistics • SmartResearch Studio (v2.5 Academic Edition)" },
+        { num: 3, src: "assets/images/standtistics/scene_03.png", title: "Slide 03: Bước 1 • Động Cơ Dữ Liệu SPSS (.sav) & Excel Nguyên Bản (Lưu Trữ Metadata)" },
+        { num: 4, src: "assets/images/standtistics/scene_04.png", title: "Slide 04: Bước 2 • Chẩn Đoán Sức Khỏe Dữ Liệu & Làm Sạch Missing Value 1-Chạm" },
+        { num: 5, src: "assets/images/standtistics/scene_05.png", title: "Slide 05: Bước 3 • Thống Kê Mô Tả, Nhân Khẩu Học & Kiểm Định Chuẩn Kline (2015)" },
+        { num: 6, src: "assets/images/standtistics/scene_06.png", title: "Slide 06: Bước 4 • Kiểm Định Độ Tin Cậy Thang Đo Cronbach's Alpha & Alpha If Item Deleted" },
+        { num: 7, src: "assets/images/standtistics/scene_07.png", title: "Slide 07: Bước 5 • Kiểm Định Giả Thuyết Khác Biệt: Independent T-Test & One-Way ANOVA" },
+        { num: 8, src: "assets/images/standtistics/scene_08.png", title: "Slide 08: Bước 6 • Phân Tích Nhân Tố Khám Phá (EFA): KMO, Bartlett & Ma Trận Xoay" },
+        { num: 9, src: "assets/images/standtistics/scene_09.png", title: "Slide 09: Bước 7 • CFA & CB-SEM qua Semopy: CMIN/df, CFI, TLI, RMSEA, CR, AVE, HTMT" },
+        { num: 10, src: "assets/images/standtistics/scene_10.png", title: "Slide 10: Bước 8 • PLS-SEM & Phân Tích Tác Động Trung Gian: Thuật Toán Wold & Bootstrap 2000" },
+        { num: 11, src: "assets/images/standtistics/scene_11.png", title: "Slide 11: Bước 9 • Machine Learning & AI Methodology Advisor: RFM, K-Means, Sentiment, LDA" },
+        { num: 12, src: "assets/images/standtistics/scene_12.png", title: "Slide 12: Bước 10 • Tự Động Xuất Báo Cáo Học Thuật Chuẩn APA 7th (Word & Excel 1-Click)" }
+      ],
+      fastlance: [
+        { num: 1, src: "assets/images/fastlance/slide_fastlance_01.png", title: "Slide 01: Brief Recap & Mục Tiêu Chiến Lược Tăng Trưởng Nền Tảng Fastlance H2 2025" },
+        { num: 2, src: "assets/images/fastlance/slide_fastlance_02.png", title: "Slide 02: Bối Cảnh Vĩ Mô: Sự Bùng Nổ Mô Hình Freelance & Nhu Cầu Tối Ưu Chi Phí Của Doanh Nghiệp" },
+        { num: 3, src: "assets/images/fastlance/slide_fastlance_03.png", title: "Slide 03: Cơ Cấu Tuyển Dụng Freelance: Top Ngành Hàng Thiết Kế, Marketing & Công Nghệ" },
+        { num: 4, src: "assets/images/fastlance/slide_fastlance_04.png", title: "Slide 04: Khảo Sát Kênh Tuyển Dụng: 60% Phụ Thuộc Facebook Group & Rủi Ro Lừa Đảo" },
+        { num: 5, src: "assets/images/fastlance/slide_fastlance_05.png", title: "Slide 05: User Audit Soft Launch 2024: Đánh Giá Phản Hồi Thực Tế & Rào Cản Phê Duyệt" },
+        { num: 6, src: "assets/images/fastlance/slide_fastlance_06.png", title: "Slide 06: Chiến Lược Nền Tảng Hai Đầu (Two-Sided Market): Mở Nút Thắt Bằng Onboarding Buyers" },
+        { num: 7, src: "assets/images/fastlance/slide_fastlance_07.png", title: "Slide 07: 4 Câu Hỏi Trọng Tâm Nghiên Cứu Khách Hàng Doanh Nghiệp (Buyers Research Framework)" },
+        { num: 8, src: "assets/images/fastlance/slide_fastlance_08.png", title: "Slide 08: Phân Khúc Chân Dung Khách Hàng Mục Tiêu: MarComms, Công Nghệ & Khối Hỗ Trợ" },
+        { num: 9, src: "assets/images/fastlance/slide_fastlance_09.png", title: "Slide 09: Khảo Sát Khó Khăn Doanh Nghiệp: Nghịch Lý Chi Phí Vận Hành Nhân Sự SMEs" },
+        { num: 10, src: "assets/images/fastlance/slide_fastlance_10.png", title: "Slide 10: Ma Trận Tối Ưu Hóa Giá Trị: Cân Bằng Thời Gian, Chất Lượng & Chi Phí Vận Hành" },
+        { num: 11, src: "assets/images/fastlance/slide_fastlance_11.png", title: "Slide 11: Phân Tích Đối Thủ Toàn Cầu: Fiverr - Định Vị, Quy Mô Cộng Đồng & Rào Cản Tại VN" },
+        { num: 12, src: "assets/images/fastlance/slide_fastlance_12.png", title: "Slide 12: Phân Tích Đối Thủ Toàn Cầu: Upwork - Phân Khúc Enterprise & Rào Cản Chi Phí" },
+        { num: 13, src: "assets/images/fastlance/slide_fastlance_13.png", title: "Slide 13: Phân Tích Đối Thủ Nội Địa: vLance - Thị Phần Lao Động & Hạn Chế Nền Tảng" },
+        { num: 14, src: "assets/images/fastlance/slide_fastlance_14.png", title: "Slide 14: Thực Trạng Thị Trường: Sự Trỗi Dậy Của Các Cộng Đồng Tự Do & Rủi Ro Giao Dịch" },
+        { num: 15, src: "assets/images/fastlance/slide_fastlance_15.png", title: "Slide 15: Ma Trận Tổng Hợp Đối Thủ: Fiverr vs Upwork vs vLance vs Hội Nhóm Tự Do" },
+        { num: 16, src: "assets/images/fastlance/slide_fastlance_16.png", title: "Slide 16: Tổng Hợp Nhu Cầu Cốt Lõi: Tốc Độ Khớp Job, Thẩm Định Chất Lượng & Hợp Đồng Bảo Chứng" }
+      ],
+      arrow: [
+        { num: 12, src: "assets/slides/slide_12.png", title: "Slide 12: Đề Án Môn Học: Khảo Sát & Hoạch Định Chiến Lược (Arrow Sanitary Ware)" },
+        { num: 13, src: "assets/slides/slide_13.png", title: "Slide 13: To-Win Strategy, Insight, Chân Dung Khách Hàng & Khung Chiến Lược" },
+        { num: 14, src: "assets/slides/slide_14.png", title: "Slide 14: Macro Market Research - Tăng Trưởng GDP & Tầng Lớp Trung Lưu SEA" },
+        { num: 15, src: "assets/slides/slide_15.png", title: "Slide 15: Competitor Analysis Matrix (Toto, Viglacera, Inax, Ceacer)" },
+        { num: 16, src: "assets/slides/slide_16.png", title: "Slide 16: Mobile Marketing Audit (Chatbot, WeChat, WhatsApp, Zalo, QR)" },
+        { num: 17, src: "assets/slides/slide_17.png", title: "Slide 17: Internet Marketing Audit (PageSpeed, Tối Ưu CSS/JS & CDN)" },
+        { num: 18, src: "assets/slides/slide_18.png", title: "Slide 18: Thách Thức Nhận Diện & Chiến Lược Đột Phá Thương Hiệu" },
+        { num: 19, src: "assets/slides/slide_19.png", title: "Slide 19: Chân Dung Khách Hàng Mục Tiêu: Demographics, Psychographics, Behaviors" },
+        { num: 20, src: "assets/slides/slide_20.png", title: "Slide 20: Customer Journey Map (Hành Trình Trải Nghiệm Khách Hàng)" },
+        { num: 21, src: "assets/slides/slide_21.png", title: "Slide 21: Kế Hoạch Hành Động 3 Giai Đoạn (Trigger - Booming - Amplify)" },
+        { num: 22, src: "assets/slides/slide_22.png", title: "Slide 22: Kế Hoạch Internet Marketing (SEO, SEM, Landing Page, PR Article)" },
+        { num: 23, src: "assets/slides/slide_23.png", title: "Slide 23: Mobile Marketing & Trải Nghiệm Mini Showroom Box" },
+        { num: 24, src: "assets/slides/slide_24.png", title: "Slide 24: Social Media Marketing & TikTok Challenge" },
+        { num: 25, src: "assets/slides/slide_25.png", title: "Slide 25: Ma Trận Quản Trị Rủi Ro 5x5 (Risk Management Matrix)" }
+      ],
+      research: [
+        { num: 4, src: "assets/slides/slide_04.png", title: "Slide 04: Báo cáo tại Hội thảo Quốc tế ICLIE - IEEE 2024" },
+        { num: 5, src: "assets/slides/slide_05.png", title: "Slide 05: Tham gia Hội thảo Khoa học Quốc tế ISSF 2024" },
+        { num: 6, src: "assets/slides/slide_06.png", title: "Slide 06: Giải Nghiên cứu Xuất sắc Bộ KH&CN (Impact Cup 2025)" },
+        { num: 7, src: "assets/slides/slide_07.png", title: "Slide 07: Giải thưởng Sinh viên NCKH Euréka 2 mùa 2024 & 2025" },
+        { num: 8, src: "assets/slides/slide_08.png", title: "Slide 08: Báo cáo tại Hội thảo Quốc tế ITU 2026 tại Singapore" },
+        { num: 9, src: "assets/slides/slide_09.png", title: "Slide 09: School Visit Đại học UKM (ĐHQG Malaysia)" },
+        { num: 10, src: "assets/slides/slide_10.png", title: "Slide 10: Báo cáo tại Hội thảo Quốc tế ICTE 2026" }
+      ],
+      project2: [
+        { num: 26, src: "assets/slides/slide_26.png", title: "Slide 26: Bìa Kế Hoạch Nghiên Cứu Thị Trường & Marketing Chiến Lược" },
+        { num: 27, src: "assets/slides/slide_27.png", title: "Slide 27: Phân Tích Thị Trường Ngành (Market Analysis)" },
+        { num: 28, src: "assets/slides/slide_28.png", title: "Slide 28: Khảo Sát Khách Hàng Mục Tiêu (Target Audience)" },
+        { num: 29, src: "assets/slides/slide_29.png", title: "Slide 29: Phân Tích Nhân Khẩu Học & Hành Vi Tiêu Dùng" },
+        { num: 30, src: "assets/slides/slide_30.png", title: "Slide 30: Xác Định Vấn Đề Cốt Lõi (Problem Definition)" },
+        { num: 31, src: "assets/slides/slide_31.png", title: "Slide 31: Phân Tích Rào Cản & Cơ Hội Tăng Trưởng" },
+        { num: 32, src: "assets/slides/slide_32.png", title: "Slide 32: Mô Hình Nghiên Cứu Thực Nghiệm (Model Research)" },
+        { num: 33, src: "assets/slides/slide_33.png", title: "Slide 33: Bản Đồ Trải Nghiệm Khách Hàng (Customer Journey)" },
+        { num: 34, src: "assets/slides/slide_34.png", title: "Slide 34: Đề Xuất Chiến Lược & Giải Pháp Marketing" },
+        { num: 35, src: "assets/slides/slide_35.png", title: "Slide 35: Kế Hoạch Hành Động Chi Tiết (Action Plan)" },
+        { num: 36, src: "assets/slides/slide_36.png", title: "Slide 36: Dự Báo Hiệu Quả & Chỉ Số Đo Lường" }
+      ],
+      data: [
+        { num: 37, src: "assets/slides/slide_37.png", title: "Slide 37: Dự Án Phân Tích Dữ Liệu (Data Analysis Cover)" },
+        { num: 38, src: "assets/slides/slide_38.png", title: "Slide 38: Machine Learning, RFM Classification & Data Visualization" }
+      ]
+    };
+
+    let currentDeckName = "arrow";
+    let currentSlideIndex = 0;
+
+    // Preview slide on card
+    function previewDeckSlide(deckName, slideNum, el) {
+      const deck = DECKS[deckName];
+      if (!deck) return;
+      const slide = deck.find(s => s.num === slideNum);
+      if (!slide) return;
+
+      let mainImgId = "";
+      let mainTitleId = "";
+      let mainFrameId = "";
+
+      if (deckName === "standtistics") {
+        mainImgId = "standtistics-main-slide-img";
+        mainTitleId = "standtistics-main-slide-title";
+        mainFrameId = "standtistics-main-frame";
+      } else if (deckName === "fastlance") {
+        mainImgId = "fastlance-main-slide-img";
+        mainTitleId = "fastlance-main-slide-title";
+        mainFrameId = "fastlance-main-frame";
+      } else if (deckName === "arrow") {
+        mainImgId = "arrow-main-slide-img";
+        mainTitleId = "arrow-main-slide-title";
+        mainFrameId = "arrow-main-frame";
+      } else if (deckName === "project2") {
+        mainImgId = "proj2-main-slide-img";
+        mainTitleId = "proj2-main-slide-title";
+        mainFrameId = "proj2-main-frame";
+      } else if (deckName === "data") {
+        mainImgId = "data-main-slide-img";
+        mainTitleId = "data-main-slide-title";
+        mainFrameId = "data-main-frame";
+      }
+
+      const img = document.getElementById(mainImgId);
+      const title = document.getElementById(mainTitleId);
+      const frame = document.getElementById(mainFrameId);
+
+      if (img) img.src = slide.src;
+      if (title) title.innerText = slide.title;
+      if (frame) frame.setAttribute("onclick", `openSlideDeck('${deckName}', ${slideNum})`);
+
+      // Update thumbnail active styles
+      if (el && el.parentElement) {
+        el.parentElement.querySelectorAll(".deck-thumb").forEach(t => {
+          t.classList.remove("border-2", "border-emerald-500", "border-amber-400", "border-cyan-400", "border-blue-400", "opacity-100");
+          t.classList.add("border", "border-white/10", "opacity-80");
+        });
+        el.classList.remove("border-white/10", "opacity-80");
+        const activeColor = deckName === "fastlance" ? "border-amber-400" : (deckName === "project2" ? "border-cyan-400" : (deckName === "data" ? "border-blue-400" : "border-emerald-500"));
+        el.classList.add("border-2", activeColor, "opacity-100");
+      }
+    }
+
+    // Open Slide Viewer Modal
+    function openSlideDeck(deckName, slideNum) {
+      if (!deckName || !DECKS[deckName]) {
+        console.error("Deck not found:", deckName);
+        return;
+      }
+      currentDeckName = deckName;
+      const deck = DECKS[deckName];
+      let index = deck.findIndex(s => s.num === slideNum);
+      if (index === -1) {
+        if (typeof slideNum === "number" && slideNum >= 0 && slideNum < deck.length) {
+          index = slideNum;
+        } else {
+          index = 0;
+        }
+      }
+      currentSlideIndex = index;
+      updateModalSlide();
+
+      const modal = document.getElementById("image-modal");
+      if (modal) {
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+      if (window.lucide && lucide.createIcons) {
+        lucide.createIcons();
+      }
+    }
+
+    // General image modal for single pictures (awards/conferences)
+    function openModal(imgSrc, caption) {
+      currentDeckName = null;
+      const modal = document.getElementById("image-modal");
+      const modalImg = document.getElementById("modal-img");
+      const modalCaption = document.getElementById("modal-caption");
+      const modalCounter = document.getElementById("modal-counter");
+      const modalBadge = document.getElementById("modal-badge");
+      const prevBtn = document.getElementById("modal-prev-btn");
+      const nextBtn = document.getElementById("modal-next-btn");
+
+      if (modalImg) modalImg.src = imgSrc;
+      if (modalCaption) modalCaption.innerText = caption || "";
+      if (modalCounter) modalCounter.innerText = "";
+      if (modalBadge) modalBadge.innerText = "PHOTO VIEW";
+      if (prevBtn) prevBtn.style.display = "none";
+      if (nextBtn) nextBtn.style.display = "none";
+
+      if (modal) {
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+      if (window.lucide && lucide.createIcons) {
+        lucide.createIcons();
+      }
+    }
+
+    function updateModalSlide() {
+      if (!currentDeckName || !DECKS[currentDeckName]) return;
+      const deck = DECKS[currentDeckName];
+      if (!deck || deck.length === 0) return;
+
+      if (typeof currentSlideIndex !== "number" || isNaN(currentSlideIndex) || currentSlideIndex < 0 || currentSlideIndex >= deck.length) {
+        currentSlideIndex = 0;
+      }
+
+      const slide = deck[currentSlideIndex];
+      if (!slide) return;
+
+      const modalImg = document.getElementById("modal-img");
+      const modalCaption = document.getElementById("modal-caption");
+      const modalCounter = document.getElementById("modal-counter");
+      const modalBadge = document.getElementById("modal-badge");
+      const prevBtn = document.getElementById("modal-prev-btn");
+      const nextBtn = document.getElementById("modal-next-btn");
+
+      if (modalImg) {
+        modalImg.src = slide.src;
+        modalImg.alt = slide.title || "Slide preview";
+      }
+      if (modalCaption) modalCaption.innerText = slide.title || "";
+      if (modalCounter) modalCounter.innerText = `Slide ${currentSlideIndex + 1} / ${deck.length}`;
+      if (modalBadge) {
+        modalBadge.innerText = (currentDeckName === "fastlance" ? "FASTLANCE RESEARCH" : (currentDeckName === "standtistics" ? "STANDTISTICS NCKH" : (currentDeckName === "data" ? "DATA & ML" : "SLIDE VIEW")));
+      }
+      
+      const modalDataLinks = document.getElementById("modal-data-links");
+      if (modalDataLinks) {
+        if (currentDeckName === "data") {
+          modalDataLinks.classList.remove("hidden");
+          modalDataLinks.classList.add("flex");
+        } else {
+          modalDataLinks.classList.add("hidden");
+          modalDataLinks.classList.remove("flex");
+        }
+      }
+      if (prevBtn) prevBtn.style.display = "flex";
+      if (nextBtn) nextBtn.style.display = "flex";
+    }
+
+    function nextSlide(e) {
+      if (e && e.stopPropagation) e.stopPropagation();
+      if (!currentDeckName || !DECKS[currentDeckName]) return;
+      const deck = DECKS[currentDeckName];
+      if (!deck || deck.length === 0) return;
+      currentSlideIndex = (currentSlideIndex + 1) % deck.length;
+      updateModalSlide();
+    }
+
+    function prevSlide(e) {
+      if (e && e.stopPropagation) e.stopPropagation();
+      if (!currentDeckName || !DECKS[currentDeckName]) return;
+      const deck = DECKS[currentDeckName];
+      if (!deck || deck.length === 0) return;
+      currentSlideIndex = (currentSlideIndex - 1 + deck.length) % deck.length;
+      updateModalSlide();
+    }
+
+    function openOriginalImage() {
+      const modalImg = document.getElementById("modal-img");
+      if (modalImg && modalImg.src) {
+        window.open(modalImg.src, "_blank");
+      }
+    }
+
+    function closeModal(event) {
+      if (event && (event.target.id === "image-modal" || event.target.id === "modal-backdrop-area")) {
+        closeModalDirect();
+      }
+    }
+
+    function closeModalDirect() {
+      const modal = document.getElementById("image-modal");
+      if (modal) modal.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+
+    // Filter project cards
+    function filterProjects(category, btnElement) {
+      const cards = document.querySelectorAll(".project-card");
+      const tabs = document.querySelectorAll(".project-tab-btn");
+      
+      // Reset all tabs
+      tabs.forEach(tab => {
+        tab.classList.remove("active", "bg-emerald-500", "text-midnight-950", "font-bold", "shadow-sm");
+        tab.classList.add("glass-panel", "text-slate-300", "hover:text-white", "hover:bg-white/[0.08]", "hover:border-white/20", "font-medium");
+      });
+
+      // Highlight active tab reliably
+      let activeBtn = btnElement;
+      if (!activeBtn && typeof event !== "undefined" && event) {
+        activeBtn = event.currentTarget || (event.target ? event.target.closest(".project-tab-btn") : null);
+      }
+      if (!activeBtn) {
+        activeBtn = document.querySelector(`.project-tab-btn[data-category="${category}"]`);
+      }
+      if (activeBtn) {
+        activeBtn.classList.remove("glass-panel", "text-slate-300", "hover:text-white", "hover:bg-white/[0.08]", "hover:border-white/20", "font-medium");
+        activeBtn.classList.add("active", "bg-emerald-500", "text-midnight-950", "font-bold", "shadow-sm");
+      }
+
+      // Filter and dynamically adapt layout for cards
+      cards.forEach(card => {
+        const matches = (category === "all" || card.classList.contains(category));
+        if (matches) {
+          card.style.display = "";
+          if (category !== "all") {
+            if (!card.classList.contains("md:col-span-2")) {
+              card.dataset.dynamicallySpanned = "true";
+              card.classList.add("md:col-span-2");
+            }
+          }
+        } else {
+          card.style.display = "none";
+        }
+
+        if (category === "all" && card.dataset.dynamicallySpanned === "true") {
+          card.classList.remove("md:col-span-2");
+          delete card.dataset.dynamicallySpanned;
+        }
+      });
+    }
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+      const modal = document.getElementById("image-modal");
+      if (!modal || modal.classList.contains("hidden")) return;
+
+      if (e.key === "Escape") closeModalDirect();
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    });
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const modalEl = document.getElementById("image-modal");
+    if (modalEl) {
+      modalEl.addEventListener("touchstart", (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          touchStartX = e.changedTouches[0].screenX;
+        }
+      }, { passive: true });
+      modalEl.addEventListener("touchend", (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          touchEndX = e.changedTouches[0].screenX;
+          const diff = touchEndX - touchStartX;
+          if (Math.abs(diff) > 40) {
+            if (diff < 0) nextSlide();
+            else prevSlide();
+          }
+        }
+      }, { passive: true });
+    }
+  </script>
+
+</body>
+</html>

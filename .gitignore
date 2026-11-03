@@ -1,0 +1,18 @@
+# Dependencies & Templates not used
+magic-ui-template/
+*.py
+*.pyc
+__pycache__/
+
+# Agent & Dev tools
+.agents/
+.specify/
+
+# System & OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch & Logs
+*.log
+scratch/
