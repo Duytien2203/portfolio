@@ -5,7 +5,7 @@ Trang Portfolio Landing Page cá nhân của **Nguyễn Duy Tiến** – **Marke
 Trang web được thiết kế nhằm gây ấn tượng mạnh mẽ với các nhà tuyển dụng hàng đầu (Headhunter, HR, Research Director, CMO, Marketing Director tại các tập đoàn nghiên cứu thị trường toàn cầu, FMCG, Agency và Tech Startups) chứng minh Duy Tiến là ứng viên sở hữu sự kết hợp hiếm có: **Kinh nghiệm nghiên cứu thực địa & kiểm soát chất lượng dữ liệu (QC & Quota Control tại VINAMR)**, **Mô hình hóa dữ liệu định lượng & Machine Learning (SPSS, Python, SmartPLS)** và **Tư duy hoạch định chiến dịch Marketing chiến lược quy mô lớn**.
 
 ## 2. Đối tượng mục tiêu (Target Audience)
-* **Nhà tuyển dụng / Hiring Managers:** Tìm kiếm nhân sự Market Research Executive, Product Marketing Executive, Data-Driven Marketing Specialist có năng lực nghiên cứu phương pháp luận chuẩn xác và kỹ năng xử lý dữ liệu thực tế.
+* **Nhà tuyển dụng / Hiring Managers:** Tìm kiếm nhân sự Market Research Executive, Performance Marketing Specialist, Data-Driven Marketing Specialist có năng lực nghiên cứu phương pháp luận chuẩn xác và kỹ năng xử lý dữ liệu thực tế.
 * **Thời gian ra quyết định trung bình:** 30 - 60 giây. Cần xem ngay số liệu ấn tượng, danh tiếng Agency (VINAMR, Fastlance), các giải thưởng uy tín (Euréka 2 mùa, Giải Bộ KH&CN 2025, Báo cáo quốc tế IEEE & Singapore) và các bộ slide thuyết trình chiến lược thực tế.
 
 ## 3. Giá trị cốt lõi & Thông điệp chính (Core Value Proposition)
