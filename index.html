@@ -1855,32 +1855,6 @@
       if (window.lucide && lucide.createIcons) lucide.createIcons();
     }
 
-    // Touch Swipe Gestures for Slide Modal
-    let touchStartX = 0;
-    let touchEndX = 0;
-    const modalBackdropArea = document.getElementById("modal-backdrop-area");
-    if (modalBackdropArea) {
-      modalBackdropArea.addEventListener("touchstart", function(e) {
-        if (e.touches && e.touches.length > 0) {
-          touchStartX = e.touches[0].clientX;
-        }
-      }, { passive: true });
-
-      modalBackdropArea.addEventListener("touchend", function(e) {
-        if (e.changedTouches && e.changedTouches.length > 0) {
-          touchEndX = e.changedTouches[0].clientX;
-          const diff = touchEndX - touchStartX;
-          if (Math.abs(diff) > 40) {
-            if (diff < 0) {
-              nextSlide(); // Swipe left -> Next slide
-            } else {
-              prevSlide(); // Swipe right -> Prev slide
-            }
-          }
-        }
-      }, { passive: true });
-    }
-
     // Copy to clipboard utility with toast feedback
     function copyToClipboard(text, message) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
