@@ -556,6 +556,9 @@
           <button onclick="filterProjects('webapp', this)" data-category="webapp" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
             Web App & Tools
           </button>
+          <button onclick="filterProjects('automation', this)" data-category="automation" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
+            AI Automation
+          </button>
           <button onclick="filterProjects('marketing', this)" data-category="marketing" class="project-tab-btn px-5 py-2.5 sm:px-6 sm:py-3 rounded-full glass-panel text-slate-300 hover:text-white hover:bg-white/[0.08] hover:border-white/20 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300">
             Đề Án Chiến Lược
           </button>
@@ -840,6 +843,138 @@
                 </div>
               </div>
 
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FLAGSHIP PROJECT 3: AI AUTOMATION WORKFLOW & WEB SCRAPING (GOOGLE MAPS + YOUTUBE + GEMINI) -->
+        <div id="ai-automation-scraping" class="project-card automation data research md:col-span-2 scroll-mt-24 rounded-3xl glass-panel glass-panel-hover p-6 sm:p-8 transition-all duration-300 overflow-hidden border border-amber-500/25 relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+            <!-- Left Info -->
+            <div class="lg:col-span-6 space-y-4">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wide border border-amber-500/40">
+                  <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                  AI Automation • n8n Workflow
+                </span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-cyan-300 text-xs font-mono border border-cyan-500/30">Multi-Platform Web & Social</span>
+                <span class="px-3 py-1 rounded-md bg-midnight-800 text-slate-300 text-xs border border-white/10">5 Màn Hình Kiến Trúc & Dữ Liệu</span>
+              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white leading-tight">
+                AI Automation Workflow: Web Scraping & AI Data Mining Đa Nền Tảng
+              </h3>
+
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Hệ thống tự động hóa (Workflow Automation) triển khai trên <strong class="text-white font-medium">n8n (Docker)</strong> kết hợp <strong class="text-white font-medium">Apify, FastAPI + Playwright Chromium</strong> và <strong class="text-white font-medium">Gemini Interactions API</strong> để thu thập dữ liệu đa nguồn từ website và các nền tảng mạng xã hội (minh họa qua 2 pipeline mẫu: Google Maps & YouTube), tiền xử lý thống kê 0-token bằng JavaScript, khai phá insight đa tầng và xuất tự động kế hoạch hành động (<code class="text-amber-300 bg-midnight-950 px-1 py-0.5 rounded text-xs">Action_Plan</code>) lên Google Sheets.
+              </p>
+
+              <!-- 4 Feature Highlights Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-1">
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-amber-400 font-semibold text-xs">
+                    <i data-lucide="git-branch" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Case Mẫu 1: Google Maps (Apify)</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Workflow 15 nodes cào địa điểm & review qua Apify, tự động lưu cache JSON (<code class="text-amber-300 bg-midnight-950 px-1 py-0.5 rounded text-[11px]">apify_raw_latest.json</code>) để chạy lại không tốn credit.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-cyan-400 font-semibold text-xs">
+                    <i data-lucide="globe" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Case Mẫu 2: YouTube (Playwright)</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Cầu nối <code class="text-cyan-300 bg-midnight-950 px-1 py-0.5 rounded text-[11px]">POST /scrape</code> điều khiển Playwright cào bình luận theo từ khóa, lọc link spam và giữ Top 60 bình luận chất lượng.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="cpu" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Tiền Xử Lý 0-Token & Micro-Batch</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Tính phân phối sao, % 1–2★ và tỷ lệ trả lời bằng JS; gán ID ngắn (<code class="text-emerald-300 bg-midnight-950 px-1 py-0.5 rounded text-[11px]">r1..r40</code>) & phân tầng <code class="text-emerald-300 bg-midnight-950 px-1 py-0.5 rounded text-[11px]">thinking_level</code> tối ưu chi phí LLM.</p>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs">
+                    <i data-lucide="bot" class="w-3.5 h-3.5 flex-none"></i>
+                    <span>Khai Phá Insight & Action Plan</span>
+                  </div>
+                  <p class="text-slate-300 text-xs leading-relaxed">Ép đầu ra JSON Schema chuẩn qua Gemini API, ghi 4 tab Google Sheets (Run, Places, Insights, Action_Plan kèm KPI & mẫu phản hồi).</p>
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-2 text-[11px] pt-1">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-amber-300 font-mono">n8n (Docker)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-cyan-300 font-mono">Gemini Interactions API</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Python + FastAPI</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Playwright</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Apify Scraper</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Google Apps Script</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Pytest Integrity</span>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <button onclick="openSlideDeck('automation', 1)" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-orange-400 text-midnight-950 font-heading font-bold text-xs hover:opacity-95 shadow-glow transition-all flex items-center gap-2">
+                  <i data-lucide="git-branch" class="w-4 h-4 text-midnight-950"></i>
+                  <span>Xem 5 Màn Hình Workflow & Output</span>
+                </button>
+
+                <button onclick="openSlideDeck('automation', 4)" class="px-4 py-2.5 rounded-xl glass-panel text-slate-200 text-xs font-medium hover:border-amber-400/50 hover:text-white transition-all flex items-center gap-1.5">
+                  <i data-lucide="database" class="w-4 h-4 text-amber-400"></i>
+                  <span>Xem Dữ Liệu Thực Tế (20 Địa Điểm)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Workflow & Data Showcase -->
+            <div class="lg:col-span-6 space-y-3">
+              <!-- Main Frame -->
+              <div id="automation-main-frame" class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer border border-white/10" onclick="openSlideDeck('automation', 1)">
+                <img id="automation-main-slide-img" src="assets/images/ai_automation/screen_01_gmaps_workflow.png" alt="n8n Google Maps Apify Scraper & Gemini AI Workflow" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight-950/85 via-transparent to-transparent"></div>
+
+                <!-- Caption Bar -->
+                <div class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-lg bg-midnight-900/90 backdrop-blur-md border border-white/10 text-xs font-mono text-amber-300 flex items-center justify-between">
+                  <div class="flex items-center gap-2 truncate">
+                    <i data-lucide="git-branch" class="w-3.5 h-3.5 flex-none"></i>
+                    <span id="automation-main-slide-title" class="truncate">Màn hình 01: n8n Workflow Google Maps Apify + Gemini AI (15 Nodes)</span>
+                  </div>
+                  <span class="text-[10px] text-slate-300 group-hover:text-amber-300 font-sans flex-none ml-2 flex items-center gap-1 transition-colors">
+                    <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                    <span>Phóng to</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Thumbnails Strip -->
+              <div>
+                <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2 flex items-center justify-between gap-2">
+                  <span class="truncate">5 màn hình kiến trúc workflow & dữ liệu mẫu:</span>
+                  <span class="text-amber-400 text-xs font-medium whitespace-nowrap">Click để đổi màn hình</span>
+                </p>
+                <div class="grid grid-cols-5 gap-1.5 sm:gap-2">
+                  <div onclick="previewDeckSlide('automation', 1, this)" class="deck-thumb active cursor-pointer rounded-lg overflow-hidden border-2 border-amber-400 opacity-100 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Màn hình 01: Workflow Google Maps 15 Nodes">
+                    <img src="assets/images/ai_automation/screen_01_gmaps_workflow.png" alt="Workflow Google Maps" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('automation', 2, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-amber-400/70 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Màn hình 02: Pipeline YouTube Playwright + n8n">
+                    <img src="assets/images/ai_automation/screen_02_youtube_pipeline.png" alt="Pipeline YouTube" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('automation', 3, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-amber-400/70 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Màn hình 03: Tối ưu 0-Token & Micro-Batching">
+                    <img src="assets/images/ai_automation/screen_03_token_optimization.png" alt="Tối ưu 0-Token" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('automation', 4, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-amber-400/70 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Màn hình 04: Dữ liệu cào thực tế (20 địa điểm Tây Ninh)">
+                    <img src="assets/images/ai_automation/screen_04_scraped_places_data.png" alt="Dữ liệu cào thực tế" class="w-full h-full object-cover">
+                  </div>
+                  <div onclick="previewDeckSlide('automation', 5, this)" class="deck-thumb cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-amber-400/70 opacity-80 hover:opacity-100 transition-all aspect-[16/9] bg-midnight-900" title="Màn hình 05: Đầu ra Insights & Action Plan Schema">
+                    <img src="assets/images/ai_automation/screen_05_ai_insights_action_plan.png" alt="Schema Insights & Action Plan" class="w-full h-full object-cover">
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -2098,6 +2233,13 @@
 
     // SLIDE DECKS DATABASE
     const DECKS = {
+      automation: [
+        { num: 1, src: "assets/images/ai_automation/screen_01_gmaps_workflow.png", title: "Màn hình 01: n8n Workflow Google Maps Apify Scraper + Gemini AI Insights (15 Nodes)" },
+        { num: 2, src: "assets/images/ai_automation/screen_02_youtube_pipeline.png", title: "Màn hình 02: Pipeline YouTube Comments Scraper (FastAPI + Playwright + n8n 6 Nodes)" },
+        { num: 3, src: "assets/images/ai_automation/screen_03_token_optimization.png", title: "Màn hình 03: Kiến Trúc Tiền Xử Lý 0-Token JS, Short ID & Micro-Batching Tối Ưu Gemini API" },
+        { num: 4, src: "assets/images/ai_automation/screen_04_scraped_places_data.png", title: "Màn hình 04: Dữ Liệu Địa Điểm Đã Cào Thực Tế (20 Địa Điểm / 132 Reviews Tại Tây Ninh)" },
+        { num: 5, src: "assets/images/ai_automation/screen_05_ai_insights_action_plan.png", title: "Màn hình 05: Cấu Trúc Đầu Ra Insights & Kế Hoạch Hành Động 4 Tầng (Action_Plan Schema)" }
+      ],
       vinamr: [
         { num: 1, src: "assets/images/vinamr_autofield/screen_01_dashboard.png", title: "Màn hình 01: Dashboard KPI & Bảng Quota Nhóm Dự Định Mua (Dự án 0747 • TP.HCM)" },
         { num: 2, src: "assets/images/vinamr_autofield/screen_02_owners_table.png", title: "Màn hình 02: Bảng Nhóm Đã Sở Hữu, Chỉ Số Hình Thức Mua & Cảnh Báo Chạm Trần Vùng Miền" },
@@ -2196,7 +2338,11 @@
       let mainTitleId = "";
       let mainFrameId = "";
 
-      if (deckName === "vinamr") {
+      if (deckName === "automation") {
+        mainImgId = "automation-main-slide-img";
+        mainTitleId = "automation-main-slide-title";
+        mainFrameId = "automation-main-frame";
+      } else if (deckName === "vinamr") {
         mainImgId = "vinamr-main-slide-img";
         mainTitleId = "vinamr-main-slide-title";
         mainFrameId = "vinamr-main-frame";
@@ -2237,7 +2383,7 @@
           t.classList.add("border", "border-white/10", "opacity-80");
         });
         el.classList.remove("border-white/10", "opacity-80");
-        const activeColor = (deckName === "fastlance" ? "border-amber-400" : ((deckName === "project2" || deckName === "vinamr") ? "border-cyan-400" : (deckName === "data" ? "border-blue-400" : "border-emerald-500")));
+        const activeColor = ((deckName === "fastlance" || deckName === "automation") ? "border-amber-400" : ((deckName === "project2" || deckName === "vinamr") ? "border-cyan-400" : (deckName === "data" ? "border-blue-400" : "border-emerald-500")));
         el.classList.add("border-2", activeColor, "opacity-100");
       }
     }
@@ -2322,9 +2468,9 @@
         modalImg.alt = slide.title || "Slide preview";
       }
       if (modalCaption) modalCaption.innerText = slide.title || "";
-      if (modalCounter) modalCounter.innerText = `${(currentDeckName === "vinamr" || currentDeckName === "standtistics") ? "Màn hình" : "Slide"} ${currentSlideIndex + 1} / ${deck.length}`;
+      if (modalCounter) modalCounter.innerText = `${(currentDeckName === "vinamr" || currentDeckName === "standtistics" || currentDeckName === "automation") ? "Màn hình" : "Slide"} ${currentSlideIndex + 1} / ${deck.length}`;
       if (modalBadge) {
-        modalBadge.innerText = (currentDeckName === "vinamr" ? "VINAMR AUTOFIELD" : (currentDeckName === "fastlance" ? "FASTLANCE RESEARCH" : (currentDeckName === "standtistics" ? "STANDTISTICS NCKH" : (currentDeckName === "data" ? "DATA & ML" : "SLIDE VIEW"))));
+        modalBadge.innerText = (currentDeckName === "automation" ? "AI AUTOMATION" : (currentDeckName === "vinamr" ? "VINAMR AUTOFIELD" : (currentDeckName === "fastlance" ? "FASTLANCE RESEARCH" : (currentDeckName === "standtistics" ? "STANDTISTICS NCKH" : (currentDeckName === "data" ? "DATA & ML" : "SLIDE VIEW")))));
       }
       
       const modalDataLinks = document.getElementById("modal-data-links");
